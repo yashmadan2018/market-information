@@ -1,0 +1,88 @@
+name: Daily Market Briefing
+
+on:
+  schedule:
+    # 7:00 AM ET = 12:00 UTC (EST) / 11:00 UTC (EDT)
+    # Using 12:00 UTC to align with 7am ET year-round (conservative for EST)
+    - cron: "0 12 * * 1-5"   # Weekdays at 12:00 UTC (7am ET)
+  workflow_dispatch:          # Allow manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write             # Allow committing reports + dashboard
+  pages: write                # Allow deploying to GitHub Pages
+  id-token: write             # Required for Pages OIDC deployment
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  daily-briefing:
+    name: Generate & Email Daily Briefing
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0       # Full history needed for git operations
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create output directories
+        run: mkdir -p reports data docs
+
+      - name: Run Market Information pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          NYT_API_KEY: ${{ secrets.NYT_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python src/main.py
+
+      - name: Commit reports and dashboard to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage new/updated files
+          git add reports/ data/ docs/
+
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TODAY=$(date +%Y-%m-%d)
+            git commit -m "briefing: daily market briefing for ${TODAY} [skip ci]"
+            git push origin HEAD
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "docs/"
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: daily-briefing
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

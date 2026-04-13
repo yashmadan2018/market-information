@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Market Information — Daily Briefing</title>
+<meta name="description" content="Automated daily macro and sector market briefing powered by AI"/>
+<style>
+:root {
+  --navy: #0f2544;
+  --navy-light: #1a3a6b;
+  --accent: #1a6fc4;
+  --accent-light: #e8f0fb;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e0e4e8;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── Top navigation ── */
+nav {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: white;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+nav .brand {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .brand span { opacity: 0.7; font-weight: 400; font-size: 13px; }
+
+nav .nav-links a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+nav .nav-links a:hover { color: white; }
+
+/* ── Layout ── */
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+/* ── Hero latest briefing ── */
+.latest-card {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.latest-card .card-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: white;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-card .card-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.latest-card .card-header .badge {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.briefing-body {
+  padding: 32px;
+  overflow-x: auto;
+}
+
+/* ── Briefing typography ── */
+.briefing-body h1 {
+  font-size: 22px;
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 32px;
+}
+.briefing-body h1:first-child { margin-top: 0; }
+
+.briefing-body h2 {
+  font-size: 17px;
+  color: var(--navy);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 7px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.briefing-body h3 {
+  font-size: 15px;
+  color: var(--navy-light);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.briefing-body p {
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.briefing-body ul, .briefing-body ol {
+  padding-left: 22px;
+  margin-bottom: 14px;
+}
+
+.briefing-body li { margin-bottom: 7px; }
+
+.briefing-body strong { color: var(--navy); }
+
+.briefing-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 16px 0;
+}
+
+.briefing-body th {
+  background: var(--navy);
+  color: white;
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.briefing-body td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.briefing-body tr:nth-child(even) td { background: #f9fafb; }
+.briefing-body tr:hover td { background: var(--accent-light); }
+
+.briefing-body code {
+  background: #f0f4f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.briefing-body blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  color: var(--muted);
+  margin: 12px 0;
+}
+
+/* ── Archive section ── */
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.archive-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.archive-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border-color: var(--accent);
+}
+
+.archive-card .date {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.archive-card .preview {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.archive-card.active {
+  border-color: var(--navy);
+  background: var(--accent-light);
+}
+
+/* ── Meta bar ── */
+.meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 32px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.meta-bar .meta-item { display: flex; align-items: center; gap: 6px; }
+.meta-bar .meta-item strong { color: var(--text); }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  nav { padding: 0 16px; }
+  .page-container { padding: 20px 16px 60px; }
+  .briefing-body { padding: 20px; }
+  .latest-card .card-header { padding: 18px 20px; }
+  .archive-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">
+    📈 Market Information <span>Daily Briefing</span>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Latest</a>
+    <a href="archive.html">Archive</a>
+  </div>
+</nav>
+<div class="page-container">
+
+  <div class="meta-bar">
+    <div class="meta-item">📅 <strong>Latest:</strong> 2026-04-13</div>
+    <div class="meta-item">🕐 <strong>Updated:</strong> April 13, 2026 at 03:08 PM ET</div>
+    <div class="meta-item">📁 <strong>Reports in archive:</strong> 1</div>
+    <div class="meta-item">🤖 <strong>Powered by:</strong> Claude AI + live market data</div>
+  </div>
+
+  <div class="latest-card">
+    <div class="card-header">
+      <h2>Today's Briefing — 2026-04-13</h2>
+      <span class="badge">Latest</span>
+    </div>
+    <div class="briefing-body">
+      <h1>Daily Market Briefing — April 13th, 2026</h1>
+<blockquote>
+<p><strong>Generated:</strong> April 13th, 2026 at 10:07 AM ET<br />
+<strong>Market prices:</strong> April 10th, 2026 close (yfinance)<br />
+<strong>Macro data:</strong> most recent available FRED release (latest obs: April 10th, 2026)<br />
+<strong>News:</strong> past 24–48 hours (NewsAPI + NYT API)<br />
+<strong>Economic calendar:</strong> next 7 days (Investing.com)</p>
+</blockquote>
+<h2>Executive Summary</h2>
+<p>• 🔴 <strong>Oil crisis escalates:</strong> WTI crude surged <strong>+7.7%</strong> to <strong>$104.0/barrel</strong> as Iran war concerns intensify, with US crude production dropping <strong>-0.1 M barrels/day</strong> <em>(EIA · week of April 3rd, 2026)</em> and Trump threatening Hormuz blockade<br />
+• 🔴 <strong>Volatility spike signals stress:</strong> VIX jumped <strong>+10.4%</strong> to <strong>21.2</strong> <em>(yfinance · April 13th, 2026 close)</em> while Treasury yields rose with 10-year hitting <strong>4.33%</strong> (+0.4%) <em>(yfinance · April 13th, 2026 close)</em><br />
+• 🟡 <strong>Mixed equity performance:</strong> NASDAQ gained <strong>+0.3%</strong> <em>(yfinance · April 10th, 2026 close)</em> while Dow fell <strong>-0.6%</strong> <em>(yfinance · April 10th, 2026 close)</em>, showing sector divergence amid geopolitical uncertainty<br />
+• 🔴 <strong>Inflation pressures building:</strong> CPI at <strong>+3.3% YoY</strong> <em>(FRED · obs. March 1st, 2026)</em> and Core PCE at <strong>+3.0% YoY</strong> <em>(FRED · obs. February 1st, 2026)</em> remain well above Fed target<br />
+• 🟢 <strong>Energy sector dominates:</strong> Leading all sectors YTD with <strong>+28.4%</strong> gains <em>(yfinance)</em>, positioning investors for continued Middle East supply disruptions</p>
+<h2>Macro Overview</h2>
+<p>🔴 Middle East conflict is driving a classic risk-off rotation with oil prices surging and volatility spiking as markets price in potential supply disruptions. 🔴 Persistent inflation readings above the Fed's target—with CPI at <strong>+3.3% YoY</strong> <em>(FRED · obs. March 1st, 2026)</em> and Core PCE at <strong>+3.0% YoY</strong> <em>(FRED · obs. February 1st, 2026)</em>—limit central bank flexibility to ease policy during this geopolitical stress. 🟡 The combination of elevated oil prices and sticky inflation creates a challenging backdrop for risk assets, though strong consumer spending with retail sales up <strong>+3.5% YoY</strong> <em>(FRED · obs. February 1st, 2026)</em> provides some economic resilience.</p>
+<h2>Key Indicator Moves</h2>
+<p>• 🔴 <strong>Inflation remains sticky:</strong> CPI at <strong>+3.3% YoY</strong> and Core PCE at <strong>+3.0% YoY</strong> <em>(FRED · obs. March 1st, 2026)</em>, both well above Fed's 2% target, constraining monetary policy options<br />
+• 🟡 <strong>Labor market cooling gradually:</strong> Unemployment at <strong>4.3%</strong> <em>(FRED · obs. March 1st, 2026)</em> with initial claims at <strong>219K</strong> <em>(FRED · obs. April 4th, 2026)</em>, showing modest loosening without distress<br />
+• 🟢 <strong>Consumer resilience intact:</strong> Retail sales growing <strong>+3.5% YoY</strong> <em>(FRED · obs. February 1st, 2026)</em> and industrial production expanding <strong>+0.15% MoM</strong> <em>(FRED · obs. February 1st, 2026)</em><br />
+• 🔴 <strong>Credit conditions tightening:</strong> 10-year Treasury yield jumping to <strong>4.33%</strong> <em>(yfinance · April 13th, 2026 close)</em> while Investment Grade Credit Spread at <strong>83 bp</strong> <em>(FRED · obs. April 9th, 2026)</em> reflects growing risk aversion</p>
+<h2>Sector Rotation &amp; Market Structure</h2>
+<p>🟡 <strong>Sector rotation shows mixed signals with cyclicals averaging +4.7% YTD versus defensives at +4.3%</strong>, indicating no clear directional bias as markets navigate conflicting signals. Energy leads dramatically with <strong>+28.4% YTD</strong> gains, followed by Materials at <strong>+14.1%</strong> and Utilities at <strong>+10.3%</strong>, while Financials lag at <strong>-7.8%</strong> and Healthcare at <strong>-5.1%</strong> <em>(yfinance)</em>. The narrow spread between cyclical and defensive performance suggests markets are in a transitional phase, with geopolitical premiums favoring commodity-linked sectors over interest-sensitive ones.</p>
+<h2>Sector-Specific Signals</h2>
+<p>• 🟡 <strong>Financials:</strong> Yield curve steepened to <strong>+50 bp</strong> <em>(FRED · obs. April 10th, 2026)</em> supporting margins, but Investment Grade Credit Spread at <strong>83 bp</strong> <em>(FRED · obs. April 9th, 2026)</em> and sector down <strong>-7.8% YTD</strong> reflect credit tightening concerns<br />
+• 🔴 <strong>Energy:</strong> Bullish inventory dynamics with gasoline stocks falling <strong>-1.6 M barrels</strong> and distillate stocks dropping <strong>-3.1 M barrels</strong> <em>(EIA · week of April 3rd, 2026)</em> while production declined, supporting <strong>+7.7%</strong> crude price surge<br />
+• 🔴 <strong>Real Estate:</strong> 10-year yield spike to <strong>4.33%</strong> <em>(yfinance · April 13th, 2026 close)</em> pressures sector despite <strong>+6.1% YTD</strong> performance, as higher borrowing costs threaten property valuations<br />
+• 🟡 <strong>Technology:</strong> Sector down <strong>-2.1% YTD</strong> despite strong recent momentum, facing headwinds from higher yields and geopolitical uncertainty affecting global supply chains</p>
+<h2>Watch List: Anomalies &amp; Divergences</h2>
+<p>• 🔴 <strong>Oil-equity divergence:</strong> WTI crude surging <strong>+7.7%</strong> to <strong>$104.0/barrel</strong> <em>(yfinance · April 13th, 2026 close)</em> while broad market flat suggests markets haven't fully priced in inflationary impact<br />
+• 🔴 <strong>VIX breakout:</strong> Volatility index jumping <strong>+10.4%</strong> to <strong>21.2</strong> <em>(yfinance · April 13th, 2026 close)</em> signals rising risk perception despite modest equity declines<br />
+• 🟡 <strong>Dollar strength muted:</strong> US Dollar Index up only <strong>+0.3%</strong> to <strong>99.0</strong> <em>(yfinance · April 13th, 2026 close)</em> despite Treasury yield surge, indicating complex cross-currents<br />
+• 🟢 <strong>High yield spreads contained:</strong> High Yield Credit Spread at <strong>290 bp</strong> <em>(FRED · obs. April 9th, 2026)</em> remains relatively tight despite geopolitical stress, showing credit market resilience</p>
+<h2>Top 5 Headlines</h2>
+<p>• 🔴 <strong>NYT (April 13th, 2026):</strong> Investors Brace for a New Hormuz Blockade Threat. Trump's plan to bar Iranian port access escalates oil supply concerns and market volatility.<br />
+• 🔴 <strong>Seeking Alpha (April 12th, 2026):</strong> U.S. oil exports seen hitting record 5.2M bbl/day as Iran war sparks supply race. Asian buyers scrambling for alternatives to Middle Eastern supply.<br />
+• 🔴 <strong>Washington Post (April 12th, 2026):</strong> China, Iran weaponized the global economy to beat the U.S. at its own game. Economic warfare tactics now impacting American consumers and companies.<br />
+• 🟡 <strong>The Verge (April 11th, 2026):</strong> The Netherlands is the first European country to approve Tesla's supervised Full Self-Driving. Technology sector milestone amid broader market uncertainty.<br />
+• 🔴 <strong>San Francisco Chronicle (April 11th, 2026):</strong> 'Close to midnight': Alleged Sam Altman firebomber wrote of fears AI would end humanity. AI sector facing increased scrutiny and security concerns.</p>
+<h2>This Week's Data Calendar</h2>
+<p>• <strong>April 13th</strong> — Existing Home Sales (Mar) | Forecast: 4.07M vs Prior: 4.09M | Key housing demand indicator amid rising rates <em>(Investing.com)</em><br />
+• <strong>April 14th</strong> — PPI (MoM) (Mar) | Forecast: 1.2% vs Prior: 0.7% | Critical inflation pipeline pressure gauge <em>(Investing.com)</em><br />
+• <strong>April 14th</strong> — Core PPI (MoM) (Mar) | Forecast: 0.5% vs Prior: 0.5% | Fed-watched underlying price pressures <em>(Investing.com)</em><br />
+• <strong>April 15th</strong> — NY Empire State Manufacturing Index (Apr) | Forecast: 0.60 vs Prior: -0.20 | Regional manufacturing health check <em>(Investing.com)</em><br />
+• <strong>April 15th</strong> — Crude Oil Inventories | Prior: 3.081M | Weekly supply/demand balance amid geopolitical tensions <em>(Investing.com)</em></p>
+<hr />
+<h2>Data Freshness &amp; Source Transparency</h2>
+<h3>Market Prices</h3>
+<table>
+<thead>
+<tr>
+<th>Instrument Group</th>
+<th>Source</th>
+<th>As-Of Date</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indices (S&amp;P 500, NASDAQ, Dow)</td>
+<td>yfinance</td>
+<td>April 10th, 2026 close</td>
+<td>S&amp;P 500: 6,817 (-0.11%)</td>
+</tr>
+<tr>
+<td>Sector ETFs</td>
+<td>yfinance</td>
+<td>April 10th, 2026 close</td>
+<td>Energy (XLE): +28.44% YTD</td>
+</tr>
+<tr>
+<td>VIX Volatility Index, US Dollar Index, Treasury Yields</td>
+<td>yfinance</td>
+<td>April 10th, 2026 close</td>
+<td>VIX: 21.23</td>
+</tr>
+<tr>
+<td>WTI Crude Oil, Brent Crude, Copper, Gold</td>
+<td>yfinance</td>
+<td>April 10th, 2026 close</td>
+<td>WTI: $104.0/barrel</td>
+</tr>
+</tbody>
+</table>
+<h3>Macroeconomic Indicators (FRED)</h3>
+<p>Observation date = the time period the data covers. Monthly data typically lags 2–6 weeks; quarterly data (GDP) lags 1–3 months.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Observation Date</th>
+<th>Value</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consumer Price Index (CPI)</td>
+<td>March 1st, 2026 (latest available)</td>
+<td>+3.3% YoY</td>
+<td>Headline consumer inflation — Fed watches closely</td>
+</tr>
+<tr>
+<td>Core CPI (ex-food &amp; energy)</td>
+<td>March 1st, 2026 (latest available)</td>
+<td>+2.6% YoY</td>
+<td>Inflation ex-food &amp; energy — Fed's preferred short-term gauge</td>
+</tr>
+<tr>
+<td>PCE Price Index</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>+2.8% YoY</td>
+<td>Consumer spending deflator — broader than CPI</td>
+</tr>
+<tr>
+<td>Core PCE (ex-food &amp; energy)</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>+3.0% YoY</td>
+<td>Fed's primary inflation target (2% goal)</td>
+</tr>
+<tr>
+<td>Producer Price Index (PPI)</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>+3.2% YoY</td>
+<td>Pipeline inflation — leads consumer prices by months</td>
+</tr>
+<tr>
+<td>Real GDP Growth (annualized)</td>
+<td>October 1st, 2025 (Q4 2025 — latest available, released quarterly)</td>
+<td>0.5% annualized</td>
+<td>Economy's growth rate — positive = expansion</td>
+</tr>
+<tr>
+<td>Real GDP</td>
+<td>October 1st, 2025 (Q4 2025 — latest available, released quarterly)</td>
+<td>$24.1 trillion</td>
+<td>Total economic output in 2017 dollars</td>
+</tr>
+<tr>
+<td>Unemployment Rate</td>
+<td>March 1st, 2026 (latest available)</td>
+<td>4.3%</td>
+<td>Share of workforce without jobs — below 4% = strong labor</td>
+</tr>
+<tr>
+<td>Initial Jobless Claims</td>
+<td>April 4th, 2026</td>
+<td>219K claims</td>
+<td>Weekly new unemployment filings — leading labor indicator</td>
+</tr>
+<tr>
+<td>Continued Claims</td>
+<td>March 28th, 2026</td>
+<td>1.79M claims</td>
+<td>People still receiving unemployment — tracks labor slack</td>
+</tr>
+<tr>
+<td>Job Openings (JOLTS)</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>6.88M openings</td>
+<td>Unfilled job openings — signals employer demand for workers</td>
+</tr>
+<tr>
+<td>Retail Sales (ex-food services)</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>$638.2B (+3.5% YoY)</td>
+<td>Consumer spending on goods — key demand barometer</td>
+</tr>
+<tr>
+<td>Consumer Sentiment (UMich)</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>56.6 (weak — scale of 0–100)</td>
+<td>Consumer confidence — below 70 signals caution on spending</td>
+</tr>
+<tr>
+<td>Industrial Production</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>+0.15% MoM (expanding)</td>
+<td>Factory &amp; mine output — measures manufacturing health</td>
+</tr>
+<tr>
+<td>Capacity Utilization</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>76.3% (below 80% healthy threshold)</td>
+<td>% of factory capacity in use — above 80% = inflationary pressure</td>
+</tr>
+<tr>
+<td>Fed Funds Rate</td>
+<td>March 1st, 2026 (latest available)</td>
+<td>3.64%</td>
+<td>Central bank benchmark rate — drives all borrowing costs</td>
+</tr>
+<tr>
+<td>10-Year Treasury Yield</td>
+<td>April 9th, 2026</td>
+<td>4.29%</td>
+<td>Long-term rate — benchmark for mortgages &amp; corporate bonds</td>
+</tr>
+<tr>
+<td>2-Year Treasury Yield</td>
+<td>April 9th, 2026</td>
+<td>3.78%</td>
+<td>Short-term rate — closely tracks Fed policy expectations</td>
+</tr>
+<tr>
+<td>Yield Curve (10Y minus 2Y)</td>
+<td>April 10th, 2026</td>
+<td>+50 bp</td>
+<td>10Y minus 2Y — negative (inverted) = recession signal</td>
+</tr>
+<tr>
+<td>Investment Grade Credit Spread</td>
+<td>April 9th, 2026</td>
+<td>83 bp</td>
+<td>Investment grade risk premium — widening = market stress</td>
+</tr>
+<tr>
+<td>High Yield Credit Spread</td>
+<td>April 9th, 2026</td>
+<td>290 bp</td>
+<td>High yield risk premium — widening = credit stress / risk-off</td>
+</tr>
+<tr>
+<td>Housing Starts</td>
+<td>January 1st, 2026 (latest available)</td>
+<td>1.49M units (ann.)</td>
+<td>New home construction — leads building activity by months</td>
+</tr>
+<tr>
+<td>Building Permits</td>
+<td>January 1st, 2026 (latest available)</td>
+<td>1.39M units (ann.)</td>
+<td>Forward-looking housing indicator — permits precede starts</td>
+</tr>
+<tr>
+<td>Existing Home Sales</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>4.09M units</td>
+<td>Resales of homes — reflects housing demand &amp; affordability</td>
+</tr>
+<tr>
+<td>M2 Money Supply</td>
+<td>February 1st, 2026 (latest available)</td>
+<td>$22.7 trillion</td>
+<td>Money supply — rapid expansion can signal future inflation</td>
+</tr>
+</tbody>
+</table>
+<h3>EIA Energy Data</h3>
+<table>
+<thead>
+<tr>
+<th>Series</th>
+<th>Week Of</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US Crude Oil Stocks</td>
+<td>April 3rd, 2026</td>
+<td>878.0 M barrels</td>
+</tr>
+<tr>
+<td>Total Petroleum Stocks</td>
+<td>April 3rd, 2026</td>
+<td>1688.2 M barrels</td>
+</tr>
+<tr>
+<td>US Crude Oil Production</td>
+<td>April 3rd, 2026</td>
+<td>13.6 M barrels per day</td>
+</tr>
+<tr>
+<td>Gasoline Stocks</td>
+<td>April 3rd, 2026</td>
+<td>239.3 M barrels</td>
+</tr>
+<tr>
+<td>Distillate Fuel Stocks</td>
+<td>April 3rd, 2026</td>
+<td>114.7 M barrels</td>
+</tr>
+<tr>
+<td>Natural Gas Storage</td>
+<td>April 3rd, 2026</td>
+<td>1911.0 Bcf</td>
+</tr>
+</tbody>
+</table>
+<h3>News &amp; Calendar</h3>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Coverage</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NewsAPI</td>
+<td>Financial headlines (as of April 13th, 2026)</td>
+<td>15 articles</td>
+</tr>
+<tr>
+<td>NYT API</td>
+<td>Business &amp; Economy (as of April 13th, 2026)</td>
+<td>11 articles</td>
+</tr>
+<tr>
+<td>Investing.com</td>
+<td>Economic calendar (next 7 days)</td>
+<td>30 events</td>
+</tr>
+</tbody>
+</table>
+<h2><em>Briefing generated April 13th, 2026 at 10:07 AM ET using claude-sonnet-4-20250514</em></h2>
+<p><em>Note: Macro indicators (GDP, CPI, PCE, etc.) reflect the most recently published government release and are inherently lagged by 2–6 weeks. Quarterly indicators (GDP) may be 1–3 months old. Market prices reflect the most recent completed trading session. All timestamps are ET. This briefing is for informational purposes only — not financial advice.</em></p>
+    </div>
+  </div>
+
+  
+
+</div>
+</body>
+</html>
