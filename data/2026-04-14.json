@@ -1,0 +1,696 @@
+{
+  "date": "2026-04-14",
+  "generated_at": "2026-04-14T13:25:28.120897",
+  "market_data": {
+    "S&P 500": {
+      "ticker": "^GSPC",
+      "price": 6886.2402,
+      "change_pct": 1.02,
+      "as_of": "2026-04-13"
+    },
+    "NASDAQ": {
+      "ticker": "^IXIC",
+      "price": 23183.7402,
+      "change_pct": 1.23,
+      "as_of": "2026-04-13"
+    },
+    "Dow Jones": {
+      "ticker": "^DJI",
+      "price": 48218.25,
+      "change_pct": 0.63,
+      "as_of": "2026-04-13"
+    },
+    "VIX": {
+      "ticker": "^VIX",
+      "price": 18.35,
+      "change_pct": -4.03,
+      "as_of": "2026-04-14"
+    },
+    "DXY": {
+      "ticker": "DX-Y.NYB",
+      "price": 97.997,
+      "change_pct": -0.38,
+      "as_of": "2026-04-14"
+    },
+    "10Y Treasury": {
+      "ticker": "^TNX",
+      "price": 4.293,
+      "change_pct": -0.09,
+      "as_of": "2026-04-14"
+    },
+    "2Y Treasury": {
+      "ticker": "^IRX",
+      "price": 3.612,
+      "change_pct": 0.25,
+      "as_of": "2026-04-14"
+    },
+    "Brent Oil": {
+      "ticker": "BZ=F",
+      "price": 97.69,
+      "change_pct": -1.68,
+      "as_of": "2026-04-14"
+    },
+    "Copper": {
+      "ticker": "HG=F",
+      "price": 6.0835,
+      "change_pct": 1.8,
+      "as_of": "2026-04-14"
+    },
+    "Gold": {
+      "ticker": "GC=F",
+      "price": 4803.7002,
+      "change_pct": 1.29,
+      "as_of": "2026-04-14"
+    }
+  },
+  "sector_performance": {
+    "Technology": {
+      "daily": 2.1,
+      "weekly": 5.95,
+      "mtd": 7.93,
+      "ytd": -0.05,
+      "current_price": 145.61,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 138.7896,
+      "ma200": null,
+      "vs_spy_daily": 1.12,
+      "vs_spy_ytd": -0.07,
+      "ticker": "XLK",
+      "ytd_rank": 7
+    },
+    "Healthcare": {
+      "daily": 0.45,
+      "weekly": 0.96,
+      "mtd": 0.16,
+      "ytd": -4.64,
+      "current_price": 147.97,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 151.7852,
+      "ma200": null,
+      "vs_spy_daily": -0.53,
+      "vs_spy_ytd": -4.66,
+      "ticker": "XLV",
+      "ytd_rank": 9
+    },
+    "Financials": {
+      "daily": 1.75,
+      "weekly": 3.57,
+      "mtd": 4.49,
+      "ytd": -6.14,
+      "current_price": 51.66,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.7886,
+      "ma200": null,
+      "vs_spy_daily": 0.77,
+      "vs_spy_ytd": -6.16,
+      "ticker": "XLF",
+      "ytd_rank": 11
+    },
+    "Consumer Discretionary": {
+      "daily": 0.91,
+      "weekly": 5.71,
+      "mtd": 3.75,
+      "ytd": -5.55,
+      "current_price": 113.92,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 113.759,
+      "ma200": null,
+      "vs_spy_daily": -0.07,
+      "vs_spy_ytd": -5.57,
+      "ticker": "XLY",
+      "ytd_rank": 10
+    },
+    "Consumer Staples": {
+      "daily": -1.0,
+      "weekly": 0.36,
+      "mtd": 0.11,
+      "ytd": 4.76,
+      "current_price": 81.55,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 84.85,
+      "ma200": null,
+      "vs_spy_daily": -1.98,
+      "vs_spy_ytd": 4.74,
+      "ticker": "XLP",
+      "ytd_rank": 6
+    },
+    "Energy": {
+      "daily": 0.3,
+      "weekly": -5.07,
+      "mtd": -3.15,
+      "ytd": 28.83,
+      "current_price": 57.11,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 56.399,
+      "ma200": null,
+      "vs_spy_daily": -0.68,
+      "vs_spy_ytd": 28.81,
+      "ticker": "XLE",
+      "ytd_rank": 1
+    },
+    "Industrials": {
+      "daily": 0.71,
+      "weekly": 5.14,
+      "mtd": 5.05,
+      "ytd": 10.42,
+      "current_price": 172.73,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 169.2278,
+      "ma200": null,
+      "vs_spy_daily": -0.27,
+      "vs_spy_ytd": 10.4,
+      "ticker": "XLI",
+      "ytd_rank": 3
+    },
+    "Materials": {
+      "daily": 0.44,
+      "weekly": 4.21,
+      "mtd": 3.43,
+      "ytd": 14.61,
+      "current_price": 52.19,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.7487,
+      "ma200": null,
+      "vs_spy_daily": -0.54,
+      "vs_spy_ytd": 14.59,
+      "ticker": "XLB",
+      "ytd_rank": 2
+    },
+    "Utilities": {
+      "daily": -1.21,
+      "weekly": 0.26,
+      "mtd": 0.61,
+      "ytd": 8.99,
+      "current_price": 46.39,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 45.6565,
+      "ma200": null,
+      "vs_spy_daily": -2.19,
+      "vs_spy_ytd": 8.97,
+      "ticker": "XLU",
+      "ytd_rank": 4
+    },
+    "Real Estate": {
+      "daily": 0.47,
+      "weekly": 3.12,
+      "mtd": 5.05,
+      "ytd": 6.59,
+      "current_price": 43.02,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 42.0834,
+      "ma200": null,
+      "vs_spy_daily": -0.51,
+      "vs_spy_ytd": 6.57,
+      "ticker": "XLRE",
+      "ytd_rank": 5
+    },
+    "Communication Services": {
+      "daily": 0.76,
+      "weekly": 2.68,
+      "mtd": 3.22,
+      "ytd": -2.29,
+      "current_price": 114.82,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 114.6535,
+      "ma200": null,
+      "vs_spy_daily": -0.22,
+      "vs_spy_ytd": -2.31,
+      "ticker": "XLC",
+      "ytd_rank": 8
+    },
+    "SPY": {
+      "daily": 0.98,
+      "weekly": 4.08,
+      "mtd": 4.71,
+      "ytd": 0.02,
+      "current_price": 686.1,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 672.8667,
+      "ma200": null,
+      "ticker": "SPY"
+    }
+  },
+  "sector_rotation": {
+    "rotation_signal": "Neutral / Mixed",
+    "cyclical_avg_ytd": 5.69,
+    "defensive_avg_ytd": 3.92,
+    "cyclical_vs_defensive_spread": 1.76,
+    "explanation": "No clear rotation signal. Cyclical and defensive sectors are performing similarly \u2014 market may be in a transitional phase.",
+    "leaders": [
+      "Energy",
+      "Materials",
+      "Industrials"
+    ],
+    "laggards": [
+      "Healthcare",
+      "Consumer Discretionary",
+      "Financials"
+    ],
+    "full_ranking": [
+      {
+        "sector": "Energy",
+        "ytd": 28.83
+      },
+      {
+        "sector": "Materials",
+        "ytd": 14.61
+      },
+      {
+        "sector": "Industrials",
+        "ytd": 10.42
+      },
+      {
+        "sector": "Utilities",
+        "ytd": 8.99
+      },
+      {
+        "sector": "Real Estate",
+        "ytd": 6.59
+      },
+      {
+        "sector": "Consumer Staples",
+        "ytd": 4.76
+      },
+      {
+        "sector": "Technology",
+        "ytd": -0.05
+      },
+      {
+        "sector": "Communication Services",
+        "ytd": -2.29
+      },
+      {
+        "sector": "Healthcare",
+        "ytd": -4.64
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "ytd": -5.55
+      },
+      {
+        "sector": "Financials",
+        "ytd": -6.14
+      }
+    ]
+  },
+  "breadth": {},
+  "fred_data": {
+    "CPI": {
+      "series_id": "CPIAUCSL",
+      "value": 330.293,
+      "date": "2026-03-01",
+      "prev_value": 327.46,
+      "change": 2.833,
+      "yoy_pct": 3.29
+    },
+    "Core_CPI": {
+      "series_id": "CPILFESL",
+      "value": 334.165,
+      "date": "2026-03-01",
+      "prev_value": 333.512,
+      "change": 0.653,
+      "yoy_pct": 2.6
+    },
+    "Core_PCE": {
+      "series_id": "PCEPILFE",
+      "value": 128.859,
+      "date": "2026-02-01",
+      "prev_value": 128.388,
+      "change": 0.471,
+      "yoy_pct": 2.97
+    },
+    "PPI": {
+      "series_id": "PPIACO",
+      "value": 267.848,
+      "date": "2026-02-01",
+      "prev_value": 262.39,
+      "change": 5.458,
+      "yoy_pct": 3.22
+    },
+    "Real_GDP": {
+      "series_id": "GDPC1",
+      "value": 24055.749,
+      "date": "2025-10-01",
+      "prev_value": 24026.834,
+      "change": 28.915,
+      "yoy_pct": 1.99
+    },
+    "Unemployment": {
+      "series_id": "UNRATE",
+      "value": 4.3,
+      "date": "2026-03-01",
+      "prev_value": 4.4,
+      "change": -0.1,
+      "yoy_pct": 2.38
+    },
+    "JOLTS": {
+      "series_id": "JTSJOL",
+      "value": 6882.0,
+      "date": "2026-02-01",
+      "prev_value": 7240.0,
+      "change": -358.0,
+      "yoy_pct": -4.97
+    },
+    "Housing_Starts": {
+      "series_id": "HOUST",
+      "value": 1487.0,
+      "date": "2026-01-01",
+      "prev_value": 1387.0,
+      "change": 100.0,
+      "yoy_pct": 9.5
+    },
+    "Building_Permits": {
+      "series_id": "PERMIT",
+      "value": 1386.0,
+      "date": "2026-01-01",
+      "prev_value": 1455.0,
+      "change": -69.0,
+      "yoy_pct": -5.07
+    },
+    "Consumer_Sentiment": {
+      "series_id": "UMCSENT",
+      "value": 56.6,
+      "date": "2026-02-01",
+      "prev_value": 56.4,
+      "change": 0.2,
+      "yoy_pct": -12.52
+    },
+    "Industrial_Production": {
+      "series_id": "INDPRO",
+      "value": 102.551,
+      "date": "2026-02-01",
+      "prev_value": 102.3963,
+      "change": 0.1547,
+      "yoy_pct": 1.44
+    },
+    "Capacity_Utilization": {
+      "series_id": "TCU",
+      "value": 76.2946,
+      "date": "2026-02-01",
+      "prev_value": 76.2529,
+      "change": 0.0417,
+      "yoy_pct": 0.03
+    },
+    "Fed_Funds_Rate": {
+      "series_id": "FEDFUNDS",
+      "value": 3.64,
+      "date": "2026-03-01",
+      "prev_value": 3.64,
+      "change": 0.0,
+      "yoy_pct": -15.94
+    },
+    "10Y_Yield": {
+      "series_id": "DGS10",
+      "value": 4.31,
+      "date": "2026-04-10",
+      "prev_value": 4.29,
+      "change": 0.02,
+      "yoy_pct": -2.05
+    },
+    "2Y_Yield": {
+      "series_id": "DGS2",
+      "value": 3.81,
+      "date": "2026-04-10",
+      "prev_value": 3.78,
+      "change": 0.03,
+      "yoy_pct": -0.78
+    },
+    "Yield_Curve_10Y2Y": {
+      "series_id": "T10Y2Y",
+      "value": 0.52,
+      "date": "2026-04-13",
+      "prev_value": 0.5,
+      "change": 0.02,
+      "yoy_pct": -3.7
+    },
+    "IG_Credit_Spread": {
+      "series_id": "BAMLC0A0CM",
+      "value": 0.82,
+      "date": "2026-04-10",
+      "prev_value": 0.83,
+      "change": -0.01,
+      "yoy_pct": -30.51
+    },
+    "HY_Credit_Spread": {
+      "series_id": "BAMLH0A0HYM2",
+      "value": 2.94,
+      "date": "2026-04-10",
+      "prev_value": 2.9,
+      "change": 0.04,
+      "yoy_pct": -33.48
+    },
+    "ISM_Manufacturing_PMI": {
+      "series_id": "MANEMP",
+      "value": 12591.0,
+      "date": "2026-03-01",
+      "prev_value": 12576.0,
+      "change": 15.0,
+      "yoy_pct": -0.59
+    },
+    "Existing_Home_Sales": {
+      "series_id": "EXHOSLUSM495S",
+      "value": 3980000.0,
+      "date": "2026-03-01",
+      "prev_value": 4130000.0,
+      "change": -150000.0,
+      "yoy_pct": -1.0
+    }
+  },
+  "eia_data": {
+    "crude_oil_stocks": {
+      "value": 878042.0,
+      "period": "2026-04-03",
+      "prev_value": 876700.0,
+      "change": 1342.0
+    },
+    "total_petroleum_stocks": {
+      "value": 1688247.0,
+      "period": "2026-04-03",
+      "prev_value": 1688663.0,
+      "change": -416.0
+    },
+    "crude_production": {
+      "value": 13596.0,
+      "period": "2026-04-03",
+      "prev_value": 13657.0,
+      "change": -61.0
+    },
+    "gasoline_stocks": {
+      "value": 239272.0,
+      "period": "2026-04-03",
+      "prev_value": 240861.0,
+      "change": -1589.0
+    },
+    "distillate_stocks": {
+      "value": 114681.0,
+      "period": "2026-04-03",
+      "prev_value": 117825.0,
+      "change": -3144.0
+    },
+    "natgas_storage": {
+      "value": 1911.0,
+      "period": "2026-04-03",
+      "units": "Bcf",
+      "change": 50.0
+    }
+  },
+  "news_headlines": [
+    {
+      "title": "Stock Market Today: Oil Jumps Back Above $100, Dow Slips on Hormuz Blockade \u2014 Live Updates - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-13-2026",
+      "description": null,
+      "published_at": "2026-04-13T14:19:00Z"
+    },
+    {
+      "title": "Delta unveils new suite design, posh plane; plans upgrade for old, dated cabins - The Points Guy",
+      "source": "The Points Guy",
+      "url": "https://thepointsguy.com/news/delta-air-lines-next-generation-delta-one-suites-cabin-retrofits/",
+      "description": "Delta Air Lines has announced that a next-generation Delta One product is coming to its newest plane next year. Retrofits are also in the works for its older aircraft cabins.",
+      "published_at": "2026-04-13T13:02:52Z"
+    },
+    {
+      "title": "Microsoft Plots New Copilot Features Inspired by OpenClaw - The Information",
+      "source": "The Information",
+      "url": "https://www.theinformation.com/articles/microsoft-plots-new-copilot-features-inspired-openclaw",
+      "description": "As Microsoft faces growing competition for business customers from Anthropic, it is developing new features that would make its AI assistant Copilot function more like OpenClaw, the open-source AI agent that has taken the AI industry by storm in recent months\u2026",
+      "published_at": "2026-04-13T13:00:00Z"
+    },
+    {
+      "title": "Roblox defends expanded age\u2011checks after parents raise concerns over errors - BBC",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cj94y9r0p10o",
+      "description": "With 144m daily users, the gaming company is extending its tech to introduce two age\u2011specific accounts.",
+      "published_at": "2026-04-13T12:19:13Z"
+    },
+    {
+      "title": "Revolution Medicines' potential breakthrough pancreatic cancer drug succeeds in late-stage trial - CNBC",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/04/13/pancreatic-cancer-drug-daraxonrasib-from-revolution-medicines-succeeds-in-trial.html",
+      "description": "Revolution Medicines' drug for pancreatic cancer succeeded in a highly anticipated Phase 3 trial.",
+      "published_at": "2026-04-13T12:00:19Z"
+    },
+    {
+      "title": "Iran war\u2019s global energy crisis sharpens China\u2019s advantage in clean tech - AP News",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/iran-middle-east-war-energy-asia-china-05d198d6e8dc99d0209dddfff26ae52a",
+      "description": "The war in Iran is sharpening China\u2019s advantage in promoting a renewable energy future, as oil disruptions expose the fragility of fossil fuel systems. Higher fuel prices are accelerating interest in electric vehicles and other clean technologies across Asia.\u2026",
+      "published_at": "2026-04-13T11:42:00Z"
+    },
+    {
+      "title": "Allogene Therapeutics Reports Interim Futility Analysis from Pivotal ALPHA3 Trial Showing 58.3% MRD Clearance with Cemacabtagene Ansegedleucel (Cema-Cel) vs. 16.7% in Observation Arm in First-Line Consolidation LBCL - Allogene",
+      "source": "Allogene.com",
+      "url": "https://ir.allogene.com/news-releases/news-release-details/allogene-therapeutics-reports-interim-futility-analysis-pivotal/",
+      "description": "41.6% Absolute Difference in the Cema-Cel Arm Over the Observation Arm Exceeded Clinically Meaningful Benchmark Based on Literature of 25-30% MRD Reduction Occurred Rapidly Following Cema-Cel Treatment with a 97.7% Median Decrease in Plasma ctDNA at Day 45 Co\u2026",
+      "published_at": "2026-04-13T11:31:08Z"
+    },
+    {
+      "title": "Ineos Automotive: Startup backed by a knighted billionaire and soccer mogul wants to rekindle the rugged SUV market - CNBC",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/04/13/ineos-automotive-grenadier-suv-james-ratcliffe.html",
+      "description": "The automaker has plans to grow sales in the U.S. by roughly 30% to 35%, as well as a target to achieve breakeven this year, executives exclusively told CNBC.",
+      "published_at": "2026-04-13T11:30:01Z"
+    },
+    {
+      "title": "Goldman bond traders take shine off bumper quarter - Financial Times",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/35f3b97a-988d-4925-b550-74cda0e28717?syn-25a6b1a6\\\\u003d1",
+      "description": "Equities unit powers bank\u2019s earnings, while fixed income, currencies and commodities business fell well short",
+      "published_at": "2026-04-13T11:29:14Z"
+    },
+    {
+      "title": "Investors are writing off any move from the Fed this month\u2014collapsing talks in Iran have sealed the deal - Fortune",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/04/13/investors-write-off-fed-rate-cut-iran-inflation/",
+      "description": "\"It is too soon to identify potential second-round effects in inflation or labor markets,\" cautioned UBS's Paul Donovan.",
+      "published_at": "2026-04-13T11:10:00Z"
+    },
+    {
+      "title": "102 years ago, a California teenager changed American food history - SFGATE",
+      "source": "SFGate",
+      "url": "https://www.sfgate.com/food/article/california-cheeseburger-22198237.php",
+      "description": "Colorado Boulevard, a historic Pasadena stretch of California's Route 66, is home to a plaque marking the creation of the cheeseburger.",
+      "published_at": "2026-04-13T11:04:09Z"
+    },
+    {
+      "title": "Meta Expected to Unseat Google as World\u2019s Largest Digital-Ad Player - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/business/media/meta-expected-to-unseat-google-as-worlds-largest-digital-ad-player-83d3f522",
+      "description": "The owner of Instagram and Facebook has fueled growth with new ad products and AI",
+      "published_at": "2026-04-13T11:00:00Z"
+    },
+    {
+      "title": "Claude Mythos Preview Has Officially Frightened the British - Gizmodo",
+      "source": "Gizmodo.com",
+      "url": "https://gizmodo.com/claude-mythos-preview-has-officially-frightened-the-british-2000745462",
+      "description": "Bankers and bank regulators are scrambling to figure out what to do.",
+      "published_at": "2026-04-13T10:00:52Z"
+    },
+    {
+      "title": "Where to invest $10,000 as the Iran war whipsaws markets, according to 9 Wall Street pros - Business Insider",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/where-to-invest-10000-right-now-iran-war-stock-market-2026-4",
+      "description": "We bring you the latest in our series on how to invest $10,000, with nine Wall Street pros sounding off on where they'd park a chunk of cash right now.",
+      "published_at": "2026-04-13T09:41:00Z"
+    },
+    {
+      "title": "Global Bonds Slide as Failure of Talks Adds to Inflation Fears - Bloomberg.com",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-13/global-bonds-slide-as-failure-of-talks-adds-to-inflation-fears",
+      "description": "Treasuries slipped as oil prices spiked following US President Donald Trump\u2019s threat to blockade the Strait of Hormuz.",
+      "published_at": "2026-04-13T09:38:06Z"
+    }
+  ],
+  "nyt_headlines": [
+    {
+      "title": "Middle East War Will Slow Global Economic Growth, I.M.F. Warns",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/iran-war-imf-economic-growth.html",
+      "abstract": "The conflict could also fuel another bout of inflation, according to the International Monetary Fund.",
+      "published_at": "2026-04-14T09:00:08-04:00"
+    },
+    {
+      "title": "What\u2019s Driving the Wartime Stock Rebound",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/dealbook/stocks-us-iran-war.html",
+      "abstract": "The S&P 500 has recouped all its losses since the Middle East war started on Feb. 28, as a bullish \u201cvibe shift\u201d takes hold among some investors.",
+      "published_at": "2026-04-14T07:46:36-04:00"
+    },
+    {
+      "title": "Oil Prices Slip and Stocks Gain as Investors Eye Possible Path to Peace",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/oil-gas-stocks-prices.html",
+      "abstract": "Investors saw a possible path to peace, with the United States and Iran trading proposals for Iran to suspend nuclear activity.",
+      "published_at": "2026-04-14T05:08:55-04:00"
+    },
+    {
+      "title": "Trump\u2019s Latest Oil Blockade Brings Bigger Economic Risks",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/energy-environment/iran-trump-blockade-oil-prices.html",
+      "abstract": "Oil markets shrugged it off, but the effort to hurt Iran could provoke retaliation that inflicts more damage on energy assets and the global economy.",
+      "published_at": "2026-04-14T05:04:49-04:00"
+    },
+    {
+      "title": "Can Michigan Become the U.S. Drone Capital?",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/michigan-drone-capital.html",
+      "abstract": "The state, known for making cars, is spending millions to entice drone manufacturers that can bring new business to auto suppliers.",
+      "published_at": "2026-04-14T05:02:40-04:00"
+    },
+    {
+      "title": "China Imposes New Rules to Block Foreign Companies From \u2018Decoupling\u2019",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/china-foreign-companies-supply-chain.html",
+      "abstract": "Multinationals in China are concerned that the regulations could allow authorities to penalize companies and executives for shifting supply chains away from the country.",
+      "published_at": "2026-04-14T00:32:09-04:00"
+    },
+    {
+      "title": "Netflix Leader Makes Rare Overture to Cinema Owners",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/14/business/media/netflix-sarandos-cinema-owners-cinemacon.html",
+      "abstract": "Ted Sarandos attended a major movie theater conference for the first time and met with domestic and international owners, people familiar with the meetings said.",
+      "published_at": "2026-04-14T00:20:41-04:00"
+    },
+    {
+      "title": "Two Iran-linked Ships Passed Through Strait of Hormuz Ahead of U.S. Blockade",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/13/world/middleeast/strait-hormuz-shipping-iran-blockade-trump.html",
+      "abstract": "The vessels exited the Strait of Hormuz on Monday, hours before a U.S. naval blockade took effect.",
+      "published_at": "2026-04-13T12:11:37-04:00"
+    },
+    {
+      "title": "Shipping Companies Remain Reluctant to Sail Through Strait of Hormuz",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/04/13/business/shipping-iran-strait-of-hormuz.html",
+      "abstract": "The United States said it has started to block vessels doing business with Iran from the strait. Details on how that would work are unclear.",
+      "published_at": "2026-04-13T11:54:18-04:00"
+    },
+    {
+      "title": "High Gas Prices Won\u2019t End Even if the War Does",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/04/12/opinion/gas-prices-iran.html",
+      "abstract": "Why a cease-fire in Iran won\u2019t bring gasoline prices down.",
+      "published_at": "2026-04-12T10:00:15Z"
+    },
+    {
+      "title": "Investors Brace for a New Hormuz Blockade Threat",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/04/13/business/dealbook/trump-iran-hormuz-blockade.html",
+      "abstract": "President Trump\u2019s plan to bar ships from entering or leaving Iranian ports has put markets on edge and added to global economic uncertainty.",
+      "published_at": "2026-04-13T11:53:27Z"
+    }
+  ],
+  "economic_calendar": []
+}
