@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 logger = logging.getLogger(__name__)
 
-RECIPIENT_EMAIL = "yashmadan2018@gmail.com"
+RECIPIENT_EMAILS = ["yashmadan2018@gmail.com", "vkilikitas@gmail.com", "micnic89@hotmail.com"]
 
 
 def _markdown_to_html(markdown_text: str) -> str:
@@ -203,7 +203,7 @@ def _ordinal_date(date_str: str) -> str:
 def send_briefing_email(
     briefing_markdown: str,
     date_str: Optional[str] = None,
-    recipient: str = RECIPIENT_EMAIL,
+    recipients: list = None,
 ) -> bool:
     """
     Send the markdown briefing as a formatted HTML email via Gmail SMTP.
@@ -217,6 +217,9 @@ def send_briefing_email(
         logger.error("GMAIL_USER or GMAIL_APP_PASSWORD not set — cannot send email")
         return False
 
+    if recipients is None:
+        recipients = RECIPIENT_EMAILS
+
     date_str = date_str or datetime.now().strftime("%Y-%m-%d")
     subject = f"Market Information — {_ordinal_date(date_str)}"
 
@@ -224,7 +227,7 @@ def send_briefing_email(
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = f"Market Information <{gmail_user}>"
-    msg["To"] = recipient
+    msg["To"] = ", ".join(recipients)
 
     # Plain text fallback
     plain_text = briefing_markdown
@@ -238,8 +241,8 @@ def send_briefing_email(
         logger.info(f"Connecting to Gmail SMTP as {gmail_user}")
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(gmail_user, gmail_password)
-            server.sendmail(gmail_user, recipient, msg.as_string())
-        logger.info(f"Briefing email sent successfully to {recipient}")
+            server.sendmail(gmail_user, recipients, msg.as_string())
+        logger.info(f"Briefing email sent successfully to {', '.join(recipients)}")
         return True
     except smtplib.SMTPAuthenticationError:
         logger.error(
