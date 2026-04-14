@@ -1,258 +1,258 @@
 {
   "date": "2026-04-13",
-  "generated_at": "2026-04-13T14:49:21.244173",
+  "generated_at": "2026-04-13T13:52:29.174099",
   "market_data": {
     "S&P 500": {
       "ticker": "^GSPC",
-      "price": 6820.2402,
-      "change_pct": 0.05,
-      "as_of": "2026-04-13"
+      "price": 6816.8901,
+      "change_pct": -0.11,
+      "as_of": "2026-04-10"
     },
     "NASDAQ": {
       "ticker": "^IXIC",
-      "price": 22952.4707,
-      "change_pct": 0.22,
-      "as_of": "2026-04-13"
+      "price": 22902.8906,
+      "change_pct": 0.35,
+      "as_of": "2026-04-10"
     },
     "Dow Jones": {
       "ticker": "^DJI",
-      "price": 47725.6719,
-      "change_pct": -0.4,
-      "as_of": "2026-04-13"
+      "price": 47916.5703,
+      "change_pct": -0.56,
+      "as_of": "2026-04-10"
     },
     "VIX": {
       "ticker": "^VIX",
-      "price": 19.83,
-      "change_pct": 3.12,
+      "price": 21.23,
+      "change_pct": 10.4,
       "as_of": "2026-04-13"
     },
     "DXY": {
       "ticker": "DX-Y.NYB",
-      "price": 98.729,
-      "change_pct": 0.08,
+      "price": 98.986,
+      "change_pct": 0.34,
       "as_of": "2026-04-13"
     },
     "10Y Treasury": {
       "ticker": "^TNX",
-      "price": 4.321,
-      "change_pct": 0.09,
+      "price": 4.333,
+      "change_pct": 0.37,
       "as_of": "2026-04-13"
     },
     "2Y Treasury": {
       "ticker": "^IRX",
-      "price": 3.595,
-      "change_pct": 0.06,
+      "price": 3.598,
+      "change_pct": 0.14,
       "as_of": "2026-04-13"
     },
     "WTI Oil": {
       "ticker": "CL=F",
-      "price": 101.58,
-      "change_pct": 5.19,
+      "price": 104.02,
+      "change_pct": 7.71,
       "as_of": "2026-04-13"
     },
     "Brent Oil": {
       "ticker": "BZ=F",
-      "price": 100.42,
-      "change_pct": 5.48,
+      "price": 102.21,
+      "change_pct": 7.36,
       "as_of": "2026-04-13"
     },
     "Copper": {
       "ticker": "HG=F",
-      "price": 5.966,
-      "change_pct": 1.63,
+      "price": 5.859,
+      "change_pct": -0.2,
       "as_of": "2026-04-13"
     },
     "Gold": {
       "ticker": "GC=F",
-      "price": 4742.2998,
-      "change_pct": -0.41,
+      "price": 4733.7998,
+      "change_pct": -0.59,
       "as_of": "2026-04-13"
     }
   },
   "sector_performance": {
     "Technology": {
-      "daily": 0.64,
-      "weekly": 4.94,
-      "mtd": 6.39,
-      "ytd": -1.48,
-      "current_price": 143.535,
+      "daily": 0.39,
+      "weekly": 4.27,
+      "mtd": 5.71,
+      "ytd": -2.11,
+      "current_price": 142.62,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 138.7481,
+      "ma50": 138.8112,
       "ma200": null,
-      "vs_spy_daily": 0.61,
-      "vs_spy_ytd": -0.56,
+      "vs_spy_daily": 0.46,
+      "vs_spy_ytd": -1.16,
       "ticker": "XLK",
       "ytd_rank": 7
     },
     "Healthcare": {
-      "daily": -0.18,
-      "weekly": 0.52,
-      "mtd": -0.46,
-      "ytd": -5.24,
-      "current_price": 147.045,
+      "daily": -1.35,
+      "weekly": 0.7,
+      "mtd": -0.28,
+      "ytd": -5.07,
+      "current_price": 147.31,
       "above_50ma": false,
       "above_200ma": null,
-      "ma50": 151.7667,
+      "ma50": 151.8896,
       "ma200": null,
-      "vs_spy_daily": -0.21,
-      "vs_spy_ytd": -4.32,
+      "vs_spy_daily": -1.28,
+      "vs_spy_ytd": -4.12,
       "ticker": "XLV",
       "ytd_rank": 9
     },
     "Financials": {
-      "daily": 0.27,
-      "weekly": 2.05,
-      "mtd": 2.96,
-      "ytd": -7.51,
-      "current_price": 50.905,
-      "above_50ma": true,
+      "daily": -1.09,
+      "weekly": 1.78,
+      "mtd": 2.69,
+      "ytd": -7.75,
+      "current_price": 50.77,
+      "above_50ma": false,
       "above_200ma": null,
-      "ma50": 50.7735,
+      "ma50": 50.821,
       "ma200": null,
-      "vs_spy_daily": 0.24,
-      "vs_spy_ytd": -6.59,
+      "vs_spy_daily": -1.02,
+      "vs_spy_ytd": -6.8,
       "ticker": "XLF",
       "ytd_rank": 11
     },
     "Consumer Discretionary": {
-      "daily": -0.3,
-      "weekly": 3.22,
-      "mtd": 2.5,
-      "ytd": -6.68,
-      "current_price": 112.55,
+      "daily": 0.13,
+      "weekly": 3.53,
+      "mtd": 2.81,
+      "ytd": -6.4,
+      "current_price": 112.89,
       "above_50ma": false,
       "above_200ma": null,
-      "ma50": 113.7316,
+      "ma50": 113.8995,
       "ma200": null,
-      "vs_spy_daily": -0.33,
-      "vs_spy_ytd": -5.76,
+      "vs_spy_daily": 0.2,
+      "vs_spy_ytd": -5.45,
       "ticker": "XLY",
       "ytd_rank": 10
     },
     "Consumer Staples": {
-      "daily": -0.92,
-      "weekly": -1.27,
-      "mtd": 0.18,
-      "ytd": 4.84,
-      "current_price": 81.61,
+      "daily": -1.29,
+      "weekly": -0.35,
+      "mtd": 1.12,
+      "ytd": 5.82,
+      "current_price": 82.37,
       "above_50ma": false,
       "above_200ma": null,
-      "ma50": 84.8512,
+      "ma50": 84.8524,
       "ma200": null,
-      "vs_spy_daily": -0.95,
-      "vs_spy_ytd": 5.76,
+      "vs_spy_daily": -1.22,
+      "vs_spy_ytd": 6.77,
       "ticker": "XLP",
       "ytd_rank": 6
     },
     "Energy": {
-      "daily": 0.31,
-      "weekly": -4.29,
-      "mtd": -3.14,
-      "ytd": 28.85,
-      "current_price": 57.1188,
+      "daily": -0.68,
+      "weekly": -4.59,
+      "mtd": -3.44,
+      "ytd": 28.44,
+      "current_price": 56.94,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 56.3991,
+      "ma50": 56.2604,
       "ma200": null,
-      "vs_spy_daily": 0.28,
-      "vs_spy_ytd": 29.77,
+      "vs_spy_daily": -0.61,
+      "vs_spy_ytd": 29.39,
       "ticker": "XLE",
       "ytd_rank": 1
     },
     "Industrials": {
-      "daily": -0.18,
-      "weekly": 4.01,
-      "mtd": 4.12,
-      "ytd": 9.45,
-      "current_price": 171.21,
+      "daily": -0.39,
+      "weekly": 4.2,
+      "mtd": 4.31,
+      "ytd": 9.65,
+      "current_price": 171.52,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 169.1974,
+      "ma50": 169.0811,
       "ma200": null,
-      "vs_spy_daily": -0.21,
-      "vs_spy_ytd": 10.37,
+      "vs_spy_daily": -0.32,
+      "vs_spy_ytd": 10.6,
       "ticker": "XLI",
       "ytd_rank": 4
     },
     "Materials": {
-      "daily": -0.44,
-      "weekly": 3.01,
-      "mtd": 2.52,
-      "ytd": 13.6,
-      "current_price": 51.7299,
+      "daily": 0.56,
+      "weekly": 3.46,
+      "mtd": 2.97,
+      "ytd": 14.1,
+      "current_price": 51.96,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 50.7395,
+      "ma50": 50.7005,
       "ma200": null,
-      "vs_spy_daily": -0.47,
-      "vs_spy_ytd": 14.52,
+      "vs_spy_daily": 0.63,
+      "vs_spy_ytd": 15.05,
       "ticker": "XLB",
       "ytd_rank": 2
     },
     "Utilities": {
-      "daily": -0.57,
-      "weekly": 1.13,
-      "mtd": 1.26,
-      "ytd": 9.7,
-      "current_price": 46.69,
+      "daily": -0.4,
+      "weekly": 1.71,
+      "mtd": 1.84,
+      "ytd": 10.33,
+      "current_price": 46.96,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 45.6625,
+      "ma50": 45.5893,
       "ma200": null,
-      "vs_spy_daily": -0.6,
-      "vs_spy_ytd": 10.62,
+      "vs_spy_daily": -0.33,
+      "vs_spy_ytd": 11.28,
       "ticker": "XLU",
       "ytd_rank": 3
     },
     "Real Estate": {
-      "daily": -0.29,
-      "weekly": 2.24,
-      "mtd": 4.26,
-      "ytd": 5.79,
-      "current_price": 42.695,
+      "daily": 0.21,
+      "weekly": 2.54,
+      "mtd": 4.57,
+      "ytd": 6.1,
+      "current_price": 42.82,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 42.0769,
+      "ma50": 42.0449,
       "ma200": null,
-      "vs_spy_daily": -0.32,
-      "vs_spy_ytd": 6.71,
+      "vs_spy_daily": 0.28,
+      "vs_spy_ytd": 7.05,
       "ticker": "XLRE",
       "ytd_rank": 5
     },
     "Communication Services": {
-      "daily": 0.05,
-      "weekly": 2.01,
-      "mtd": 2.49,
-      "ytd": -2.98,
-      "current_price": 114.01,
+      "daily": -0.28,
+      "weekly": 1.96,
+      "mtd": 2.44,
+      "ytd": -3.03,
+      "current_price": 113.95,
       "above_50ma": false,
       "above_200ma": null,
-      "ma50": 114.6373,
+      "ma50": 114.7453,
       "ma200": null,
-      "vs_spy_daily": 0.02,
-      "vs_spy_ytd": -2.06,
+      "vs_spy_daily": -0.21,
+      "vs_spy_ytd": -2.08,
       "ticker": "XLC",
       "ytd_rank": 8
     },
     "SPY": {
-      "daily": 0.03,
-      "weekly": 3.14,
-      "mtd": 3.72,
-      "ytd": -0.92,
-      "current_price": 679.6399,
+      "daily": -0.07,
+      "weekly": 3.12,
+      "mtd": 3.7,
+      "ytd": -0.95,
+      "current_price": 679.46,
       "above_50ma": true,
       "above_200ma": null,
-      "ma50": 672.7375,
+      "ma50": 672.9877,
       "ma200": null,
       "ticker": "SPY"
     }
   },
   "sector_rotation": {
     "rotation_signal": "Neutral / Mixed",
-    "cyclical_avg_ytd": 4.75,
-    "defensive_avg_ytd": 3.77,
-    "cyclical_vs_defensive_spread": 0.98,
+    "cyclical_avg_ytd": 4.7,
+    "defensive_avg_ytd": 4.3,
+    "cyclical_vs_defensive_spread": 0.41,
     "explanation": "No clear rotation signal. Cyclical and defensive sectors are performing similarly \u2014 market may be in a transitional phase.",
     "leaders": [
       "Energy",
@@ -267,47 +267,47 @@
     "full_ranking": [
       {
         "sector": "Energy",
-        "ytd": 28.85
+        "ytd": 28.44
       },
       {
         "sector": "Materials",
-        "ytd": 13.6
+        "ytd": 14.1
       },
       {
         "sector": "Utilities",
-        "ytd": 9.7
+        "ytd": 10.33
       },
       {
         "sector": "Industrials",
-        "ytd": 9.45
+        "ytd": 9.65
       },
       {
         "sector": "Real Estate",
-        "ytd": 5.79
+        "ytd": 6.1
       },
       {
         "sector": "Consumer Staples",
-        "ytd": 4.84
+        "ytd": 5.82
       },
       {
         "sector": "Technology",
-        "ytd": -1.48
+        "ytd": -2.11
       },
       {
         "sector": "Communication Services",
-        "ytd": -2.98
+        "ytd": -3.03
       },
       {
         "sector": "Healthcare",
-        "ytd": -5.24
+        "ytd": -5.07
       },
       {
         "sector": "Consumer Discretionary",
-        "ytd": -6.68
+        "ytd": -6.4
       },
       {
         "sector": "Financials",
-        "ytd": -7.51
+        "ytd": -7.75
       }
     ]
   },
@@ -491,35 +491,27 @@
     },
     "IG_Credit_Spread": {
       "series_id": "BAMLC0A0CM",
-      "value": 0.82,
-      "date": "2026-04-10",
+      "value": 0.83,
+      "date": "2026-04-09",
       "prev_value": 0.83,
-      "change": -0.01,
-      "yoy_pct": -30.51
+      "change": 0.0,
+      "yoy_pct": -31.4
     },
     "HY_Credit_Spread": {
       "series_id": "BAMLH0A0HYM2",
-      "value": 2.94,
-      "date": "2026-04-10",
-      "prev_value": 2.9,
-      "change": 0.04,
-      "yoy_pct": -33.48
-    },
-    "ISM_Manufacturing_PMI": {
-      "series_id": "MANEMP",
-      "value": 12591.0,
-      "date": "2026-03-01",
-      "prev_value": 12576.0,
-      "change": 15.0,
-      "yoy_pct": -0.59
+      "value": 2.9,
+      "date": "2026-04-09",
+      "prev_value": 2.94,
+      "change": -0.04,
+      "yoy_pct": -33.64
     },
     "Existing_Home_Sales": {
       "series_id": "EXHOSLUSM495S",
-      "value": 3980000.0,
-      "date": "2026-03-01",
-      "prev_value": 4130000.0,
-      "change": -150000.0,
-      "yoy_pct": -1.0
+      "value": 4090000.0,
+      "date": "2026-02-01",
+      "prev_value": 4020000.0,
+      "change": 70000.0,
+      "yoy_pct": -1.45
     }
   },
   "eia_data": {
@@ -562,20 +554,6 @@
   },
   "news_headlines": [
     {
-      "title": "Why inflation is the economic problem of the decade - Axios",
-      "source": "Axios",
-      "url": "https://www.axios.com/2026/04/12/inflation-economy-decade-iran-oil",
-      "description": "When seemingly one-off events pile up on top of each other, prices get reset across the economy.",
-      "published_at": "2026-04-12T12:51:37Z"
-    },
-    {
-      "title": "Lessons learned in '70s have made the US and world economies less vulnerable to oil shocks - AP News",
-      "source": "Associated Press",
-      "url": "https://apnews.com/article/oil-shocks-inflation-energy-stagflation-1970s-f12d886ce8af46862ad69be98f75a5d0",
-      "description": "The world economy is experiencing a disorienting flashback to the 1970s. Oil prices are surging in the wake of war in the Middle East, and that's driving up the cost of gasoline, diesel and jet fuel and threatening a return to stagflation. But the U.S. and wo\u2026",
-      "published_at": "2026-04-12T11:28:00Z"
-    },
-    {
       "title": "China, Iran weaponized the global economy to beat the U.S. at its own game - The Washington Post",
       "source": "The Washington Post",
       "url": "https://www.washingtonpost.com/business/2026/04/12/iran-war-global-economy/",
@@ -583,81 +561,11 @@
       "published_at": "2026-04-12T10:31:56Z"
     },
     {
-      "title": "\u2018We aren't in it to make 5% or 6%': Warren Buffett calls Iran war market dip 'nothing.\u2019 What he sees that others don't - Yahoo Finance",
-      "source": "Yahoo Entertainment",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/arent-5-6-warren-buffett-100700705.html",
-      "description": "The markets are in a state of \u2018extreme fear.\u2019 But that doesn\u2019t mean you have to be.",
-      "published_at": "2026-04-12T10:07:00Z"
-    },
-    {
-      "title": "How Much Do You Need To Invest To Make $100k On Dividends Right Now? New PF Investment Income Series - 24/7 Wall St.",
-      "source": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/04/12/how-much-do-you-need-to-invest-to-make-100k-on-dividends-right-now-new-pf-investment-income-series/",
-      "description": "Replacing a $100,000 annual income with dividends is a concrete, achievable goal for investors with enough capital and the right yield strategy. The math is straightforward, but the tradeoffs are real: each yield tier costs you differently in capital required\u2026",
-      "published_at": "2026-04-12T09:50:03Z"
-    },
-    {
-      "title": "Bessent and Powell call emergency meeting with bank CEOs after Anthropic's Mythos AI finds thousands of zero-day exploits - moneywise.com",
-      "source": "Moneywise.com",
-      "url": "https://moneywise.com/news/top-stories/bessent-powell-emergency-meeting-bank-ceos-anthropic-mythos-ai",
-      "description": "The model found a 27-year-old flaw in one of the world's most secure operating systems. Now regulators want the biggest banks in America to get ready for what comes next.",
-      "published_at": "2026-04-12T09:45:24Z"
-    },
-    {
-      "title": "What the Hell Happened to Wendy\u2019s? - Slate Magazine",
-      "source": "Slate Magazine",
-      "url": "https://slate.com/life/2026/04/wendys-near-me-location-closures-menu.html",
-      "description": "A frost has settled on a once great restaurant.",
-      "published_at": "2026-04-12T09:40:00Z"
-    },
-    {
-      "title": "Failure of US-Iran Talks Set to Weigh on Risk Assets Monday - Bloomberg.com",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-12/failure-of-us-iran-talks-set-to-weigh-on-risk-assets-monday",
-      "description": "The US and Iran\u2019s failure to strike a peace deal over the weekend is set to weigh on market sentiment and lift demand for safe haven assets on Monday, according to analysts.",
-      "published_at": "2026-04-12T09:17:53Z"
-    },
-    {
-      "title": "If You See This Apple Message, Delete It\u2014Your iCloud Account Is Under Attack - Forbes",
-      "source": "Forbes",
-      "url": "https://www.forbes.com/sites/zakdoffman/2026/04/12/if-you-see-this-apple-message-delete-it-your-icloud-account-is-under-attack/",
-      "description": "Apple users warned all photos and other content will be deleted \u2014 here's what to do.",
-      "published_at": "2026-04-12T09:01:15Z"
-    },
-    {
-      "title": "Why reopening the Strait of Hormuz won\u2019t be enough to solve shipping woes and high oil prices - CNN",
-      "source": "CNN",
-      "url": "https://www.cnn.com/2026/04/12/business/strait-hormuz-oil-exports",
-      "description": "Reopening the Strait of Hormuz is proving to be difficult. But even if the vital waterway fully opens and oil and other necessary cargo sail out, it won\u2019t be enough to return things to normal.",
-      "published_at": "2026-04-12T09:00:54Z"
-    },
-    {
-      "title": "What to Do with Lavender in April to Set Your Plant Up for Its Best Summer Bloom Yet - Homes and Gardens",
-      "source": "Homesandgardens.com",
-      "url": "https://www.homesandgardens.com/gardens/what-to-do-with-lavender-in-april",
-      "description": "April is less about flowers and more about getting lavender in shape for a stronger, fuller summer ahead",
-      "published_at": "2026-04-12T06:00:00Z"
-    },
-    {
-      "title": "U.S.-Iran Talks End With No Deal; How Will Dow Jones Futures, Oil Prices React? - Investor's Business Daily",
-      "source": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-us-iran-talks-no-deal-vp-jd-vance/",
-      "description": "Vice President JD Vance said Tehran has \"chosen not to accept our terms.\"",
-      "published_at": "2026-04-12T04:55:00Z"
-    },
-    {
-      "title": "Cruise companies to Alaska are avoiding a popular excursion to Tracy Arm after a massive landslide - AP News",
-      "source": "Associated Press",
-      "url": "https://apnews.com/article/alaska-tracy-arm-cruises-landslide-b7d5171aed649de82b52bf4138a69919",
-      "description": "For years, a popular part of many cruises in southeast Alaska has been sailing up Tracy Arm, a long, narrow fjord marked by steep mountains, glittering waterfalls and calving glaciers. But this season, major cruise lines are skipping it. A massive landslide l\u2026",
-      "published_at": "2026-04-12T04:03:00Z"
-    },
-    {
-      "title": "Wall Street banks set to report $40bn trading haul as Iran war rekindles volatility - Financial Times",
+      "title": "Switzerland\u2019s Zug becomes bolt-hole for Gulf-based wealth - Financial Times",
       "source": "Financial Times",
-      "url": "https://www.ft.com/content/7dfb2398-f414-4c82-927c-5db4d34cb5da?syn-25a6b1a6\\\\u003d1",
-      "description": "Five largest US lenders expected to unveil highest combined trading revenues since at least 2014",
-      "published_at": "2026-04-12T04:01:56Z"
+      "url": "https://www.ft.com/content/e4444e33-8586-4d87-890a-e9270f2c26b5?syn-25a6b1a6\\\\u003d1",
+      "description": "Small Swiss town is welcoming individuals and companies seeking refuge from war in the Middle East",
+      "published_at": "2026-04-12T04:00:12Z"
     },
     {
       "title": "An AI started and employed an entire store with $100,000. It screwed up with staffing on day one. - Business Insider",
@@ -665,37 +573,93 @@
       "url": "https://www.businessinsider.com/andon-market-luna-ai-agent-managed-store-san-francisco-2026-4",
       "description": "Andon Labs let an AI loose with $100,000 to start a small store in San Francisco.",
       "published_at": "2026-04-12T01:30:00Z"
+    },
+    {
+      "title": "U.S. oil exports seen hitting record 5.2M bbl/day as Iran war sparks supply race (USO:NYSEARCA) - Seeking Alpha",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4574171-us-oil-exports-seen-hitting-record-52m-bblday-as-iran-war-sparks-supply-race",
+      "description": "US crude exports are projected to reach a record high 5.2M bbl/day in May, as Asian buyers snap up cargoes to offset the loss of Middle Eastern supply due to the Iran war, Kpler said.",
+      "published_at": "2026-04-12T00:20:28Z"
+    },
+    {
+      "title": "The Netherlands is the first European country to approve Tesla\u2019s supervised Full Self-Driving - The Verge",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/910717/netherlands-tesla-supervised-full-self-driving",
+      "description": "The Netherlands is the first EU country to approve Tesla\u2019s Full Self-Driving Supervised mode, opening the door for more countries to approve it.",
+      "published_at": "2026-04-11T23:22:15Z"
+    },
+    {
+      "title": "Experimental Drug Can Reverse Osteoarthritis in Weeks, Animal Research Shows - ScienceAlert",
+      "source": "ScienceAlert",
+      "url": "https://www.sciencealert.com/experimental-drug-can-reverse-osteoarthritis-in-weeks-animal-research-shows",
+      "description": "The debilitating, chronic loss of joint cartilage known as osteoarthritis causes pain and bone decay for hundreds of millions of people every day, but new help may be on the way \u2013 in the form of a simple, single shot.",
+      "published_at": "2026-04-11T21:05:55Z"
+    },
+    {
+      "title": "\u2018Close to midnight\u2019: Alleged Sam Altman firebomber wrote of fears AI would end humanity - San Francisco Chronicle",
+      "source": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/crime/article/sam-altman-openai-daniel-alejandro-moreno-gama-22201211.php",
+      "description": "The alleged firebomber of OpenAI CEO Sam\u00a0Altman\u2019s home wrote of fears AI would end humanity.",
+      "published_at": "2026-04-11T20:56:36Z"
+    },
+    {
+      "title": "\u2018How Do We Make Sure That Claude Behaves Itself?\u2019: Anthropic Invited 15 Christians for a Summit - Gizmodo",
+      "source": "Gizmodo.com",
+      "url": "https://gizmodo.com/how-do-we-make-sure-that-claude-behaves-itself-anthropic-invited-15-christians-for-a-summit-2000743766",
+      "description": "Anthropic is reportedly looking to be steered by various kinds of moral thinkers.",
+      "published_at": "2026-04-11T19:28:04Z"
+    },
+    {
+      "title": "\u2018A big slap in the face\u2019: San Francisco protesters rally at Philz over Pride flags - San Francisco Chronicle",
+      "source": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/san-francisco-philz-protest-pride-flags-22200366.php",
+      "description": "San Francisco protesters rallied outside Philz after the company said it would remove Pride flags from its caf\u00e9s.",
+      "published_at": "2026-04-11T19:01:33Z"
+    },
+    {
+      "title": "AI use in housing is booming. The rules to keep it fair are shrinking. - Politico",
+      "source": "Politico",
+      "url": "https://www.politico.com/news/2026/04/11/housing-lenders-ai-discrimination-disparate-impact-00864051",
+      "description": "The Trump administration is rolling back civil rights protections that have been used to challenge bias in housing.",
+      "published_at": "2026-04-11T18:00:00Z"
+    },
+    {
+      "title": "Tribally owned gas stations offer cheaper fuel as Iran war drives up prices - PBS",
+      "source": "PBS",
+      "url": "https://www.pbs.org/newshour/nation/tribally-owned-gas-stations-offer-cheaper-fuel-as-iran-war-drives-up-prices",
+      "description": "Tribes exempt from state fuel taxes can sell for much less than competing stations nearby.",
+      "published_at": "2026-04-11T17:15:48Z"
+    },
+    {
+      "title": "Trump name-drops Palantir by ticker symbol, 1st president to hype a stock. It surged $10B in minutes amid a 16% freefall - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-name-drops-palantir-ticker-154500129.html",
+      "description": "Critics are calling it market manipulation. Michael Burry is betting against it. Here's what investors should know.",
+      "published_at": "2026-04-11T15:45:00Z"
+    },
+    {
+      "title": "A Panicked Race for Barrels Is Gripping the Global Oil Market - Bloomberg.com",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-11/the-oil-market-is-in-the-grip-of-a-panicked-race-for-barrels",
+      "description": "While investors focused on the fragile Iranian ceasefire this week, a desperate scramble for cargoes has been playing out in the oil market, as traders and refiners scour the globe for immediately available supplies.",
+      "published_at": "2026-04-11T15:00:17Z"
+    },
+    {
+      "title": "'The plan is working': Trump's trade chief brushes off economic fears in Rust Belt tour - Politico",
+      "source": "Politico",
+      "url": "https://www.politico.com/news/2026/04/11/jamieson-greer-tariffs-manufacturing-economy-00867999",
+      "description": "U.S. Trade Representative Jamieson Greer reiterated the administration's commitment to tariffs and other industrial policies as he touted manufacturing gains.",
+      "published_at": "2026-04-11T14:55:09Z"
+    },
+    {
+      "title": "Two Hikers Found a Simple Aluminum Can in the Woods Filled With Nearly 600 Gold Coins Worth $330,000 - The Daily Galaxy",
+      "source": "The Daily Galaxy --Great Discoveries Channel",
+      "url": "https://dailygalaxy.com/2026/04/two-hikers-find-can-with-600-gold-coins/",
+      "description": "They thought it was just an old can in the woods, until they opened it and found a hidden fortune inside.",
+      "published_at": "2026-04-11T14:15:00Z"
     }
   ],
   "nyt_headlines": [
-    {
-      "title": "Judge Dismisses Trump\u2019s Suit Against The Wall Street Journal",
-      "source": "NYT Top Stories",
-      "url": "https://www.nytimes.com/2026/04/13/business/media/trump-wall-street-journal-lawsuit-dismissed-epstein.html",
-      "abstract": "The judge said President Trump had not \u201cplausibly alleged\u201d that The Journal published the article with actual malice.",
-      "published_at": "2026-04-13T09:59:34-04:00"
-    },
-    {
-      "title": "Iran Blockade Sets Up a Test of Which Side Can Endure More Pain",
-      "source": "NYT Top Stories",
-      "url": "https://www.nytimes.com/2026/04/13/us/politics/iran-war-strait-of-hormuz-blockade-economy.html",
-      "abstract": "President Trump is trying to choke off the country\u2019s lifeline with a blockade of the Strait of Hormuz. But the Iranians are betting that his tolerance for political pain is limited.",
-      "published_at": "2026-04-13T09:35:04-04:00"
-    },
-    {
-      "title": "Hollywood Heavyweights Sign Letter Opposing Paramount\u2019s Deal for Warner Bros.",
-      "source": "NYT Top Stories",
-      "url": "https://www.nytimes.com/2026/04/13/business/media/hollywood-letter-opposing-paramount-warner-bros-deal.html",
-      "abstract": "The letter warns that the deal will result in fewer jobs for creatives, along with higher costs and less choice for audiences.",
-      "published_at": "2026-04-13T08:57:08-04:00"
-    },
-    {
-      "title": "Effects of Iran War Emerge in Company Earnings, Starting With Goldman Sachs",
-      "source": "NYT Top Stories",
-      "url": "https://www.nytimes.com/2026/04/13/business/goldman-sachs-earnings.html",
-      "abstract": "It will be a tricky earnings season, as the investment banking giant became the first to show on Monday.",
-      "published_at": "2026-04-13T08:52:43-04:00"
-    },
     {
       "title": "Investors Brace for a New Hormuz Blockade Threat",
       "source": "NYT Top Stories",
@@ -726,10 +690,45 @@
     },
     {
       "title": "China\u2019s Electrostate Is Poised to Win From War in the Middle East",
-      "source": "NYT Times Wire",
+      "source": "NYT Top Stories",
       "url": "https://www.nytimes.com/2026/04/13/business/energy-environment/china-energy-battery-grid.html",
       "abstract": "A cluster of Chinese firms is poised to win big from the energy crisis set off by the war in the Middle East, building on booming investment in artificial intelligence.",
       "published_at": "2026-04-13T00:01:08-04:00"
+    },
+    {
+      "title": "Elon Musk, Who Owns X, Appears to Post on TikTok",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/12/technology/elon-musk-tiktok.html",
+      "abstract": "A verified account with the @elonmusk handle also recently showed up on Instagram, as the billionaire prepares to take his rocket company SpaceX public.",
+      "published_at": "2026-04-12T19:43:48-04:00"
+    },
+    {
+      "title": "Oil Prices Surge Above $100 After Peace Talks Fail and Trump Threatens Blockade",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/12/business/oil-prices-surge-above-100-after-peace-talks-fail-and-trump-threatens-blockade.html",
+      "abstract": "Oil prices surged as markets reopened following news that U.S. peace talks with Iran had ended without a deal.",
+      "published_at": "2026-04-12T18:14:16-04:00"
+    },
+    {
+      "title": "Former Economy Minister Is Chosen as Quebec Premier Ahead of Elections",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/12/world/americas/canada-quebec-premier-christine-frechette.html",
+      "abstract": "Far behind in the polls, Quebec\u2019s governing party chose Christine Fr\u00e9chette to succeed Fran\u00e7ois Legault and to lead it in a vote this fall.",
+      "published_at": "2026-04-12T17:58:05-04:00"
+    },
+    {
+      "title": "The \u2018Annoyance Economy\u2019 Is More Than Just Annoying",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/04/12/business/annoyance-economy-costs.html",
+      "abstract": "A new estimate puts the cost of dealing with robocalls, hidden fees and customer service chatbots that can\u2019t solve most problems at $165 billion.",
+      "published_at": "2026-04-12T05:00:48-04:00"
+    },
+    {
+      "title": "Peloton\u2019s Latest Leader Thinks He Can Coach It Back to Health",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/04/12/business/peloton-peter-stern.html",
+      "abstract": "The fitness company has fallen to a small fraction of its value at its pandemic peak, but Peter Stern says Peloton is headed in the right direction.",
+      "published_at": "2026-04-12T05:00:41-04:00"
     },
     {
       "title": "High Gas Prices Won\u2019t End Even if the War Does",
@@ -739,5 +738,306 @@
       "published_at": "2026-04-12T10:00:15Z"
     }
   ],
-  "economic_calendar": []
+  "economic_calendar": [
+    {
+      "date": "2026/04/13",
+      "time": "10:00",
+      "event": "OPEC Monthly Report",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/13",
+      "time": "14:00",
+      "event": "Existing Home Sales  (Mar)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "4.07M",
+      "previous": "4.09M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/13",
+      "time": "14:00",
+      "event": "Existing Home Sales (MoM)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.7%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "09:00",
+      "event": "IEA Monthly Report",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "12:15",
+      "event": "ADP Employment Change Weekly",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "26.00K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "12:30",
+      "event": "Core PPI (MoM)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "0.5%",
+      "previous": "0.5%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "12:30",
+      "event": "PPI (MoM)  (Mar)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "1.2%",
+      "previous": "0.7%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "16:45",
+      "event": "Fed Vice Chair for Supervision Barr Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/14",
+      "time": "20:30",
+      "event": "API Weekly Crude Oil Stock",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "3.719M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "12:30",
+      "event": "Export Price Index (MoM)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.5%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "12:30",
+      "event": "Fed Vice Chair for Supervision Barr Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "12:30",
+      "event": "Import Price Index (MoM)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "0.8%",
+      "previous": "1.3%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "12:30",
+      "event": "NY Empire State Manufacturing Index  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "0.60",
+      "previous": "-0.20",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "14:30",
+      "event": "Crude Oil Inventories",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "3.081M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "14:30",
+      "event": "Cushing Crude Oil Inventories",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "0.024M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "17:45",
+      "event": "FOMC Member Bowman Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "18:00",
+      "event": "Beige Book",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/15",
+      "time": "20:00",
+      "event": "TIC Net Long-Term Transactions  (Feb)",
+      "importance": "\u2605\u2605",
+      "forecast": "58.6B",
+      "previous": "15.5B",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "12:30",
+      "event": "Continuing Jobless Claims",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1,794K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "12:30",
+      "event": "Initial Jobless Claims",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "215K",
+      "previous": "219K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "12:30",
+      "event": "Philadelphia Fed Manufacturing Index  (Apr)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "10.5",
+      "previous": "18.1",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "12:30",
+      "event": "Philly Fed Employment  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "0.8",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "12:35",
+      "event": "FOMC Member Williams Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "13:15",
+      "event": "Industrial Production (MoM)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "0.2%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "13:15",
+      "event": "Industrial Production (YoY)  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.44%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/16",
+      "time": "20:30",
+      "event": "Fed's Balance Sheet",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "6,694B",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/17",
+      "time": "15:30",
+      "event": "FOMC Member Daly Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/17",
+      "time": "17:00",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "411",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/17",
+      "time": "17:00",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "545",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/04/17",
+      "time": "18:00",
+      "event": "Fed Waller Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    }
+  ]
 }
