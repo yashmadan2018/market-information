@@ -3,8 +3,8 @@ name: Daily Market Briefing
 on:
   schedule:
     # 7:00 AM ET = 12:00 UTC (EST) / 11:00 UTC (EDT)
-    # Using 12:00 UTC to align with 7am ET year-round (conservative for EST)
-    - cron: "0 12 * * 1-5"   # Weekdays at 12:00 UTC (7am ET)
+    # Using 12:00 UTC year-round (runs at 7am ET in winter, 8am ET in summer)
+    - cron: "0 12 * * *"      # Every day at 12:00 UTC (7am ET)
   workflow_dispatch:          # Allow manual trigger from GitHub Actions UI
 
 permissions:
