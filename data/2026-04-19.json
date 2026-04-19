@@ -1,0 +1,757 @@
+{
+  "date": "2026-04-19",
+  "generated_at": "2026-04-19T12:37:29.417868",
+  "market_data": {
+    "S&P 500": {
+      "ticker": "^GSPC",
+      "price": 7126.0601,
+      "change_pct": 1.2,
+      "as_of": "2026-04-17"
+    },
+    "NASDAQ": {
+      "ticker": "^IXIC",
+      "price": 24468.4805,
+      "change_pct": 1.52,
+      "as_of": "2026-04-17"
+    },
+    "Dow Jones": {
+      "ticker": "^DJI",
+      "price": 49447.4297,
+      "change_pct": 1.79,
+      "as_of": "2026-04-17"
+    },
+    "VIX": {
+      "ticker": "^VIX",
+      "price": 17.48,
+      "change_pct": -2.56,
+      "as_of": "2026-04-17"
+    },
+    "DXY": {
+      "ticker": "DX-Y.NYB",
+      "price": 98.1,
+      "change_pct": -0.12,
+      "as_of": "2026-04-17"
+    },
+    "10Y Treasury": {
+      "ticker": "^TNX",
+      "price": 4.246,
+      "change_pct": -1.46,
+      "as_of": "2026-04-17"
+    },
+    "2Y Treasury": {
+      "ticker": "^IRX",
+      "price": 3.6,
+      "change_pct": -0.28,
+      "as_of": "2026-04-17"
+    },
+    "WTI Oil": {
+      "ticker": "CL=F",
+      "price": 82.59,
+      "change_pct": -12.78,
+      "as_of": "2026-04-17"
+    },
+    "Brent Oil": {
+      "ticker": "BZ=F",
+      "price": 90.38,
+      "change_pct": -9.07,
+      "as_of": "2026-04-17"
+    },
+    "Copper": {
+      "ticker": "HG=F",
+      "price": 6.1145,
+      "change_pct": 0.79,
+      "as_of": "2026-04-17"
+    },
+    "Gold": {
+      "ticker": "GC=F",
+      "price": 4879.6001,
+      "change_pct": 1.97,
+      "as_of": "2026-04-17"
+    }
+  },
+  "sector_performance": {
+    "Technology": {
+      "daily": 1.53,
+      "weekly": 6.0,
+      "mtd": 14.41,
+      "ytd": 5.94,
+      "current_price": 154.35,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 139.5091,
+      "ma200": null,
+      "vs_spy_daily": 0.32,
+      "vs_spy_ytd": 2.42,
+      "ticker": "XLK",
+      "ytd_rank": 6
+    },
+    "Healthcare": {
+      "daily": 1.49,
+      "weekly": 0.56,
+      "mtd": 0.72,
+      "ytd": -4.11,
+      "current_price": 148.8,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 151.2651,
+      "ma200": null,
+      "vs_spy_daily": 0.28,
+      "vs_spy_ytd": -7.63,
+      "ticker": "XLV",
+      "ytd_rank": 10
+    },
+    "Financials": {
+      "daily": 0.77,
+      "weekly": 1.49,
+      "mtd": 6.05,
+      "ytd": -4.74,
+      "current_price": 52.43,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.6796,
+      "ma200": null,
+      "vs_spy_daily": -0.44,
+      "vs_spy_ytd": -8.26,
+      "ticker": "XLF",
+      "ytd_rank": 11
+    },
+    "Consumer Discretionary": {
+      "daily": 2.36,
+      "weekly": 5.7,
+      "mtd": 9.66,
+      "ytd": -0.16,
+      "current_price": 120.41,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 113.547,
+      "ma200": null,
+      "vs_spy_daily": 1.15,
+      "vs_spy_ytd": -3.68,
+      "ticker": "XLY",
+      "ytd_rank": 9
+    },
+    "Consumer Staples": {
+      "daily": 1.26,
+      "weekly": 1.12,
+      "mtd": 1.23,
+      "ytd": 5.93,
+      "current_price": 82.46,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 84.5992,
+      "ma200": null,
+      "vs_spy_daily": 0.05,
+      "vs_spy_ytd": 2.41,
+      "ticker": "XLP",
+      "ytd_rank": 7
+    },
+    "Energy": {
+      "daily": -2.76,
+      "weekly": -3.66,
+      "mtd": -6.7,
+      "ytd": 24.11,
+      "current_price": 55.02,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 56.7799,
+      "ma200": null,
+      "vs_spy_daily": -3.97,
+      "vs_spy_ytd": 20.59,
+      "ticker": "XLE",
+      "ytd_rank": 1
+    },
+    "Industrials": {
+      "daily": 1.87,
+      "weekly": 0.45,
+      "mtd": 5.52,
+      "ytd": 10.92,
+      "current_price": 173.51,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 169.6068,
+      "ma200": null,
+      "vs_spy_daily": 0.66,
+      "vs_spy_ytd": 7.4,
+      "ticker": "XLI",
+      "ytd_rank": 3
+    },
+    "Materials": {
+      "daily": 0.25,
+      "weekly": -0.59,
+      "mtd": 2.81,
+      "ytd": 13.93,
+      "current_price": 51.88,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.8768,
+      "ma200": null,
+      "vs_spy_daily": -0.96,
+      "vs_spy_ytd": 10.41,
+      "ticker": "XLB",
+      "ytd_rank": 2
+    },
+    "Utilities": {
+      "daily": -0.41,
+      "weekly": -0.5,
+      "mtd": 0.11,
+      "ytd": 8.45,
+      "current_price": 46.16,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 45.9366,
+      "ma200": null,
+      "vs_spy_daily": -1.62,
+      "vs_spy_ytd": 4.93,
+      "ticker": "XLU",
+      "ytd_rank": 5
+    },
+    "Real Estate": {
+      "daily": 1.53,
+      "weekly": 3.39,
+      "mtd": 8.62,
+      "ytd": 10.21,
+      "current_price": 44.48,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 42.3148,
+      "ma200": null,
+      "vs_spy_daily": 0.32,
+      "vs_spy_ytd": 6.69,
+      "ticker": "XLRE",
+      "ytd_rank": 4
+    },
+    "Communication Services": {
+      "daily": 0.23,
+      "weekly": 3.73,
+      "mtd": 7.07,
+      "ytd": 1.35,
+      "current_price": 119.1,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 114.6349,
+      "ma200": null,
+      "vs_spy_daily": -0.98,
+      "vs_spy_ytd": -2.17,
+      "ticker": "XLC",
+      "ytd_rank": 8
+    },
+    "SPY": {
+      "daily": 1.21,
+      "weekly": 3.5,
+      "mtd": 8.38,
+      "ytd": 3.52,
+      "current_price": 710.14,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 673.8792,
+      "ma200": null,
+      "ticker": "SPY"
+    }
+  },
+  "sector_rotation": {
+    "rotation_signal": "Neutral / Mixed",
+    "cyclical_avg_ytd": 7.34,
+    "defensive_avg_ytd": 5.12,
+    "cyclical_vs_defensive_spread": 2.22,
+    "explanation": "No clear rotation signal. Cyclical and defensive sectors are performing similarly \u2014 market may be in a transitional phase.",
+    "leaders": [
+      "Energy",
+      "Materials",
+      "Industrials"
+    ],
+    "laggards": [
+      "Consumer Discretionary",
+      "Healthcare",
+      "Financials"
+    ],
+    "full_ranking": [
+      {
+        "sector": "Energy",
+        "ytd": 24.11
+      },
+      {
+        "sector": "Materials",
+        "ytd": 13.93
+      },
+      {
+        "sector": "Industrials",
+        "ytd": 10.92
+      },
+      {
+        "sector": "Real Estate",
+        "ytd": 10.21
+      },
+      {
+        "sector": "Utilities",
+        "ytd": 8.45
+      },
+      {
+        "sector": "Technology",
+        "ytd": 5.94
+      },
+      {
+        "sector": "Consumer Staples",
+        "ytd": 5.93
+      },
+      {
+        "sector": "Communication Services",
+        "ytd": 1.35
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "ytd": -0.16
+      },
+      {
+        "sector": "Healthcare",
+        "ytd": -4.11
+      },
+      {
+        "sector": "Financials",
+        "ytd": -4.74
+      }
+    ]
+  },
+  "breadth": {},
+  "fred_data": {
+    "CPI": {
+      "series_id": "CPIAUCSL",
+      "value": 330.293,
+      "date": "2026-03-01",
+      "prev_value": 327.46,
+      "change": 2.833,
+      "yoy_pct": 3.29
+    },
+    "Core_CPI": {
+      "series_id": "CPILFESL",
+      "value": 334.165,
+      "date": "2026-03-01",
+      "prev_value": 333.512,
+      "change": 0.653,
+      "yoy_pct": 2.6
+    },
+    "PCE": {
+      "series_id": "PCEPI",
+      "value": 129.449,
+      "date": "2026-02-01",
+      "prev_value": 128.965,
+      "change": 0.484,
+      "yoy_pct": 2.8
+    },
+    "Core_PCE": {
+      "series_id": "PCEPILFE",
+      "value": 128.859,
+      "date": "2026-02-01",
+      "prev_value": 128.388,
+      "change": 0.471,
+      "yoy_pct": 2.97
+    },
+    "PPI": {
+      "series_id": "PPIACO",
+      "value": 274.102,
+      "date": "2026-03-01",
+      "prev_value": 269.296,
+      "change": 4.806,
+      "yoy_pct": 6.03
+    },
+    "Real_GDP_Growth": {
+      "series_id": "A191RL1Q225SBEA",
+      "value": 0.5,
+      "date": "2025-10-01",
+      "prev_value": 4.4,
+      "change": -3.9,
+      "yoy_pct": -73.68
+    },
+    "Real_GDP": {
+      "series_id": "GDPC1",
+      "value": 24055.749,
+      "date": "2025-10-01",
+      "prev_value": 24026.834,
+      "change": 28.915,
+      "yoy_pct": 1.99
+    },
+    "Unemployment": {
+      "series_id": "UNRATE",
+      "value": 4.3,
+      "date": "2026-03-01",
+      "prev_value": 4.4,
+      "change": -0.1,
+      "yoy_pct": 2.38
+    },
+    "Jobless_Claims": {
+      "series_id": "ICSA",
+      "value": 207000.0,
+      "date": "2026-04-11",
+      "prev_value": 218000.0,
+      "change": -11000.0,
+      "yoy_pct": -4.61
+    },
+    "Continued_Claims": {
+      "series_id": "CCSA",
+      "value": 1818000.0,
+      "date": "2026-04-04",
+      "prev_value": 1787000.0,
+      "change": 31000.0,
+      "yoy_pct": -3.09
+    },
+    "JOLTS": {
+      "series_id": "JTSJOL",
+      "value": 6882.0,
+      "date": "2026-02-01",
+      "prev_value": 7240.0,
+      "change": -358.0,
+      "yoy_pct": -4.97
+    },
+    "Retail_Sales": {
+      "series_id": "RSXFS",
+      "value": 638224.0,
+      "date": "2026-02-01",
+      "prev_value": 634233.0,
+      "change": 3991.0,
+      "yoy_pct": 3.48
+    },
+    "M2": {
+      "series_id": "M2SL",
+      "value": 22667.3,
+      "date": "2026-02-01",
+      "prev_value": 22469.1,
+      "change": 198.2,
+      "yoy_pct": 4.88
+    },
+    "Housing_Starts": {
+      "series_id": "HOUST",
+      "value": 1487.0,
+      "date": "2026-01-01",
+      "prev_value": 1387.0,
+      "change": 100.0,
+      "yoy_pct": 9.5
+    },
+    "Building_Permits": {
+      "series_id": "PERMIT",
+      "value": 1386.0,
+      "date": "2026-01-01",
+      "prev_value": 1455.0,
+      "change": -69.0,
+      "yoy_pct": -5.07
+    },
+    "Consumer_Sentiment": {
+      "series_id": "UMCSENT",
+      "value": 56.6,
+      "date": "2026-02-01",
+      "prev_value": 56.4,
+      "change": 0.2,
+      "yoy_pct": -12.52
+    },
+    "Industrial_Production": {
+      "series_id": "INDPRO",
+      "value": 101.7898,
+      "date": "2026-03-01",
+      "prev_value": 102.344,
+      "change": -0.5542,
+      "yoy_pct": 0.74
+    },
+    "Capacity_Utilization": {
+      "series_id": "TCU",
+      "value": 75.6596,
+      "date": "2026-03-01",
+      "prev_value": 76.1407,
+      "change": -0.4811,
+      "yoy_pct": -0.62
+    },
+    "Fed_Funds_Rate": {
+      "series_id": "FEDFUNDS",
+      "value": 3.64,
+      "date": "2026-03-01",
+      "prev_value": 3.64,
+      "change": 0.0,
+      "yoy_pct": -15.94
+    },
+    "10Y_Yield": {
+      "series_id": "DGS10",
+      "value": 4.32,
+      "date": "2026-04-16",
+      "prev_value": 4.29,
+      "change": 0.03,
+      "yoy_pct": 0.7
+    },
+    "2Y_Yield": {
+      "series_id": "DGS2",
+      "value": 3.78,
+      "date": "2026-04-16",
+      "prev_value": 3.76,
+      "change": 0.02,
+      "yoy_pct": 0.27
+    },
+    "Yield_Curve_10Y2Y": {
+      "series_id": "T10Y2Y",
+      "value": 0.55,
+      "date": "2026-04-17",
+      "prev_value": 0.54,
+      "change": 0.01,
+      "yoy_pct": 3.77
+    },
+    "IG_Credit_Spread": {
+      "series_id": "BAMLC0A0CM",
+      "value": 0.81,
+      "date": "2026-04-16",
+      "prev_value": 0.8,
+      "change": 0.01,
+      "yoy_pct": -28.32
+    },
+    "HY_Credit_Spread": {
+      "series_id": "BAMLH0A0HYM2",
+      "value": 2.86,
+      "date": "2026-04-16",
+      "prev_value": 2.85,
+      "change": 0.01,
+      "yoy_pct": -31.25
+    },
+    "ISM_Manufacturing_PMI": {
+      "series_id": "MANEMP",
+      "value": 12591.0,
+      "date": "2026-03-01",
+      "prev_value": 12576.0,
+      "change": 15.0,
+      "yoy_pct": -0.59
+    },
+    "Existing_Home_Sales": {
+      "series_id": "EXHOSLUSM495S",
+      "value": 3980000.0,
+      "date": "2026-03-01",
+      "prev_value": 4130000.0,
+      "change": -150000.0,
+      "yoy_pct": -1.0
+    }
+  },
+  "eia_data": {
+    "crude_oil_stocks": {
+      "value": 872985.0,
+      "period": "2026-04-10",
+      "prev_value": 878042.0,
+      "change": -5057.0
+    },
+    "total_petroleum_stocks": {
+      "value": 1675125.0,
+      "period": "2026-04-10",
+      "prev_value": 1688247.0,
+      "change": -13122.0
+    },
+    "crude_production": {
+      "value": 13596.0,
+      "period": "2026-04-10",
+      "prev_value": 13596.0,
+      "change": 0.0
+    },
+    "gasoline_stocks": {
+      "value": 232944.0,
+      "period": "2026-04-10",
+      "prev_value": 239272.0,
+      "change": -6328.0
+    },
+    "distillate_stocks": {
+      "value": 111559.0,
+      "period": "2026-04-10",
+      "prev_value": 114681.0,
+      "change": -3122.0
+    },
+    "natgas_storage": {
+      "value": 1970.0,
+      "period": "2026-04-10",
+      "units": "Bcf",
+      "change": 59.0
+    }
+  },
+  "news_headlines": [
+    {
+      "title": "Federal judge blocks Nexstar-Tegna TV station merger until antitrust lawsuit is settled - abcnews.com",
+      "source": "Abcnews.com",
+      "url": "https://abcnews.com/Business/wireStory/federal-judge-blocks-nexstar-tegna-tv-station-merger-132156812",
+      "description": "A federal judge has blocked the $6.2 billion merger between local television giants Nexstar Media Group and Tegna until an antitrust lawsuit is resolved",
+      "published_at": "2026-04-18T07:23:06Z"
+    },
+    {
+      "title": "Trump plans to ease access to psychedelics like psilocybin, ibogaine - The Washington Post",
+      "source": "The Washington Post",
+      "url": "https://www.washingtonpost.com/politics/2026/04/17/trump-psychedelics-psylocibin-research/",
+      "description": "The president will direct federal agencies to boost research into the drugs and support clinical trials, moves championed by Health Secretary Robert F. Kennedy Jr.",
+      "published_at": "2026-04-18T05:22:45Z"
+    },
+    {
+      "title": "Exclusive | Greg Abel Has Been Leading Berkshire for 100 Days. Things Are Already Changing. - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/finance/berkshire-hathaway-ceo-greg-abel-first-100-days-a42fcf27",
+      "description": null,
+      "published_at": "2026-04-18T00:30:00Z"
+    },
+    {
+      "title": "Anthropic and Trump: Is a truce near? - Politico",
+      "source": "Politico",
+      "url": "https://www.politico.com/news/2026/04/17/anthropic-and-trump-is-a-truce-near-00879655",
+      "description": "Two months ago, the president denounced the AI startup as a \"woke\" company run by \"leftwing nut jobs.\" But the sides are talking again after Anthropic's new cyber tool sparked fears across the government.",
+      "published_at": "2026-04-18T00:24:45Z"
+    },
+    {
+      "title": "OpenAI loses 3 top executives as it cuts back on 'side quests' - Business Insider",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/openai-executive-departures-shake-up-leadership-team-2026-4",
+      "description": "OpenAI loses three executives as it sharpens its business focus and faces rising pressure from Anthropic.",
+      "published_at": "2026-04-18T00:00:12Z"
+    },
+    {
+      "title": "QVC Group, Whose Networks Popularized Shopping On TV, Files For Chapter 11 Bankruptcy - Deadline",
+      "source": "Deadline",
+      "url": "http://deadline.com/2026/04/qvc-group-home-shopping-tv-chapter-11-bankruptcy-1236864715/",
+      "description": "QVC Group, which pioneered live TV shopping but grappled with cord-cutting and digital competition, has filed for Chapter 11 bankruptcy.",
+      "published_at": "2026-04-17T23:22:00Z"
+    },
+    {
+      "title": "American Airlines Says It Won\u2019t Merge With United - The New York Times",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSmp6ejJUZVFlVXNmb0NsRVBRRUtLeDlUSUJwNXowTkc4MzY5dWtDY1F4b0twa1VXbmNCZWQ4OWF4OWwxYWRycElkZjA0RTl1ZHJ5WmFFXzRlMkU3VWpzS3FxclNsdFFPcTNpNXg2akdmQ0hqanhBSEtNSm9uMDZNa0I3ZnR3ZG8?oc=5",
+      "description": null,
+      "published_at": "2026-04-17T23:16:09Z"
+    },
+    {
+      "title": "Sam Altman\u2019s project World looks to scale its human verification empire. First stop: Tinder. - TechCrunch",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
+      "description": "World, which has raised eyebrows (but also a lot of interest) with its Orb-centered anonymous verification project, is looking to expand its influence via a bevy of new partnerships.",
+      "published_at": "2026-04-17T22:34:02Z"
+    },
+    {
+      "title": "Meta layoffs: Tech giant to cut about 8,000 jobs in May, report says - San Francisco Chronicle",
+      "source": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/tech/article/meta-layoffs-may-reuters-22212763.php",
+      "description": "Meta plans layoffs starting May 20 that could affect about 8,000 workers, with more cuts possible later in 2026, Reuters reports.",
+      "published_at": "2026-04-17T22:31:55Z"
+    },
+    {
+      "title": "With Allbirds AI pivot, a familiar strategy takes flight - Axios",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/17/with-allbirds-ai-pivot-a-familiar-strategy-takes-flight",
+      "description": "Back in the 1990s, companies could slap a \".com\" on their names and watch their stocks fly \u2014\u00a0and it's happening now.",
+      "published_at": "2026-04-17T21:02:52Z"
+    },
+    {
+      "title": "Anthropic debuts Claude Design, because who needs designers? - theregister.com",
+      "source": "Theregister.com",
+      "url": "https://www.theregister.com/2026/04/17/anthropic_debuts_claude_design/",
+      "description": ": The bar for creating visual assets has been lowered to the ability to converse with a model",
+      "published_at": "2026-04-17T20:38:00Z"
+    },
+    {
+      "title": "Jet fuel supplies are lagging. What does that mean for airlines and travelers? - AP News",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/jet-fuel-shortage-iran-war-iea-travel-b77b3d7113e88d1862f90db433cb95af",
+      "description": "A looming jet fuel shortage in Europe and Asia could compound the Iran war's impact on world travel if a fragile agreement to reopen the Strait of Hormuz collapses and Persian Gulf oil shipments stay blocked. That would mean higher airfares and flight cancell\u2026",
+      "published_at": "2026-04-17T20:11:00Z"
+    },
+    {
+      "title": "Spirit Airlines seeks U.S. government aid as oil spike threatens turnaround - The Air Current",
+      "source": "The Air Current",
+      "url": "https://theaircurrent.com/airlines/spirit-duffy-bailout-dot-fuel/",
+      "description": "Low-cost carriers expected to meet with Transportation Secretary Duffy early next week",
+      "published_at": "2026-04-17T19:36:10Z"
+    },
+    {
+      "title": "Trader Joe\u2019s will pay an average $102 per customer in class-action settlement. Find out if you qualify - OregonLive.com",
+      "source": "OregonLive",
+      "url": "https://www.oregonlive.com/retail/2026/04/trader-joes-will-pay-an-average-102-per-customer-in-class-action-settlement-find-out-if-you-qualify.html",
+      "description": "The settlement was reached after one customer noticed that a receipt revealed most of the digits of his debit card number.",
+      "published_at": "2026-04-17T18:54:00Z"
+    },
+    {
+      "title": "Air Canada will suspend flights to JFK for nearly 5 months as jet fuel costs soar - AP News",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/air-canada-jfk-fuel-iran-b44f4994f2af268cf6929c5f0f52080f",
+      "description": "Air Canada will suspend service to New York\u2019s JFK International airport over the summer, the latest move in an industry struggling with high fuel costs and falling supplies. The Canadian airline said Friday that service from Toronto and Montreal to New York w\u2026",
+      "published_at": "2026-04-17T18:50:00Z"
+    }
+  ],
+  "nyt_headlines": [
+    {
+      "title": "My Boss Is Addled by ChatGPT. Do I Have to Play Along?",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/business/ai-at-work-creativity-ageism.html",
+      "abstract": "Plus, if you\u2019re feeling old and sidelined at work, this is the fictional character to channel.",
+      "published_at": "2026-04-19T05:03:05-04:00"
+    },
+    {
+      "title": "Luxury Brands Bet on the Middle East. War Has Damaged Their Plans.",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/business/luxury-brands-bet-on-the-middle-east-war-has-damaged-their-plans.html",
+      "abstract": "High-end brands such as Louis Vuitton and Herm\u00e8s are looking to other regions as sales in Persian Gulf nations plummet.",
+      "published_at": "2026-04-19T05:03:03-04:00"
+    },
+    {
+      "title": "They Went Abroad to Save Money. Moving Back Seems Unaffordable.",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/business/americans-abroad-cheaper-living-costs.html",
+      "abstract": "Americans have enjoyed lifestyles that would normally be out of reach to them by working remotely in countries with lower living costs.",
+      "published_at": "2026-04-19T05:02:52-04:00"
+    },
+    {
+      "title": "Are Democrats Becoming a Party of Tax Cuts?",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/business/democrats-tax-cuts-affordability.html",
+      "abstract": "As Democrats try to find a way back to power in Washington, some see tax cuts as a quick and easy way to address affordability. The wonks are freaking out.",
+      "published_at": "2026-04-19T05:02:50-04:00"
+    },
+    {
+      "title": "This Is a Hard Time to Start a Career. These Two Words Can Help.",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/business/career-graduation-jobs-gen-z.html",
+      "abstract": "Advice on building a rewarding work life, even amid employment gloom.",
+      "published_at": "2026-04-19T05:02:31-04:00"
+    },
+    {
+      "title": "Syrian Billionaires Needed a Favor in Washington. They Invoked the Trump Name.",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/19/us/politics/syrian-billionaires-needed-a-favor-in-washington-they-invoked-the-trump-name.html",
+      "abstract": "The attempt by the Khayyats to influence foreign policy while discussions are underway about potential Trump family deals is an increasingly common feature of the president\u2019s second term.",
+      "published_at": "2026-04-19T05:00:47-04:00"
+    },
+    {
+      "title": "Humans Who Used a Bear Suit to Defraud Car Insurers Are Sentenced to Jail",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/18/us/bear-suit-insurance-fraud-california.html",
+      "abstract": "The California residents collected more than $141,000 in insurance payouts after staging bear attacks on their luxury cars, state officials said.",
+      "published_at": "2026-04-18T19:03:52-04:00"
+    },
+    {
+      "title": "Man Charged in Lego Theft Scheme of Replacing Pieces With Pasta, Police Say",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/04/18/us/lego-theft-pasta-california.html",
+      "abstract": "A California man was charged with grand theft after the police said he reaped about $34,000 in what an official called an \u201coff the charts\u201d pasta-and-switch scheme involving Lego kits.",
+      "published_at": "2026-04-18T17:31:27-04:00"
+    },
+    {
+      "title": "Hollywood Talent Giant Draws Suitors Amid Epstein Fallout",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/04/18/business/media/hollywood-talent-agency-casey-wasserman-epstein.html",
+      "abstract": "Formerly known as Wasserman, the agency that has changed its name to The Team put itself up for sale after its founder\u2019s emails surfaced in the Epstein files.",
+      "published_at": "2026-04-18T14:19:16-04:00"
+    },
+    {
+      "title": "Why Your Paycheck Feels Smaller",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/video/business/100000010843347/why-your-paycheck-feels-smaller.html",
+      "abstract": "Ben Casselman, our chief economics correspondent, explains why wages are not keeping up with inflation and what that means for American workers and the economy.",
+      "published_at": "2026-04-18T10:49:42-04:00"
+    },
+    {
+      "title": "Corporate Profits Are at Record Highs. These 4 Factors Could Sink Them.",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/04/18/business/dealbook/corporate-profits-record.html",
+      "abstract": "Experts have different theories about what\u2019s driving steep gains. But many agree the window for growth is shrinking.",
+      "published_at": "2026-04-18T08:00:03-04:00"
+    },
+    {
+      "title": "Why the Stock Market Makes No Sense Right Now",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/04/18/opinion/wall-street-markets-iran-ai.html",
+      "abstract": "It will always be saved.",
+      "published_at": "2026-04-18T11:00:20Z"
+    }
+  ],
+  "economic_calendar": []
+}
