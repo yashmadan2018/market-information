@@ -1,0 +1,1079 @@
+{
+  "date": "2026-05-15",
+  "generated_at": "2026-05-15T13:29:09.470148",
+  "market_data": {
+    "S&P 500": {
+      "ticker": "^GSPC",
+      "price": 7501.2402,
+      "change_pct": 0.77,
+      "as_of": "2026-05-14"
+    },
+    "NASDAQ": {
+      "ticker": "^IXIC",
+      "price": 26635.2207,
+      "change_pct": 0.88,
+      "as_of": "2026-05-14"
+    },
+    "Dow Jones": {
+      "ticker": "^DJI",
+      "price": 50063.4609,
+      "change_pct": 0.75,
+      "as_of": "2026-05-14"
+    },
+    "VIX": {
+      "ticker": "^VIX",
+      "price": 19.04,
+      "change_pct": 10.31,
+      "as_of": "2026-05-15"
+    },
+    "DXY": {
+      "ticker": "DX-Y.NYB",
+      "price": 99.207,
+      "change_pct": 0.33,
+      "as_of": "2026-05-15"
+    },
+    "10Y Treasury": {
+      "ticker": "^TNX",
+      "price": 4.56,
+      "change_pct": 2.22,
+      "as_of": "2026-05-15"
+    },
+    "2Y Treasury": {
+      "ticker": "^IRX",
+      "price": 3.595,
+      "change_pct": 0.2,
+      "as_of": "2026-05-15"
+    },
+    "WTI Oil": {
+      "ticker": "CL=F",
+      "price": 99.39,
+      "change_pct": -1.76,
+      "as_of": "2026-05-15"
+    },
+    "Brent Oil": {
+      "ticker": "BZ=F",
+      "price": 107.92,
+      "change_pct": 2.08,
+      "as_of": "2026-05-15"
+    },
+    "Copper": {
+      "ticker": "HG=F",
+      "price": 6.2895,
+      "change_pct": -4.23,
+      "as_of": "2026-05-15"
+    },
+    "Gold": {
+      "ticker": "GC=F",
+      "price": 4557.1001,
+      "change_pct": -2.59,
+      "as_of": "2026-05-15"
+    }
+  },
+  "sector_performance": {
+    "Technology": {
+      "daily": 1.5,
+      "weekly": 2.27,
+      "mtd": 10.89,
+      "ytd": 23.21,
+      "current_price": 179.5,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 148.9807,
+      "ma200": null,
+      "vs_spy_daily": 0.71,
+      "vs_spy_ytd": 14.14,
+      "ticker": "XLK",
+      "ytd_rank": 2
+    },
+    "Healthcare": {
+      "daily": -0.05,
+      "weekly": 2.19,
+      "mtd": 1.01,
+      "ytd": -5.5,
+      "current_price": 146.63,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 146.9073,
+      "ma200": null,
+      "vs_spy_daily": -0.84,
+      "vs_spy_ytd": -14.57,
+      "ticker": "XLV",
+      "ytd_rank": 10
+    },
+    "Financials": {
+      "daily": 0.59,
+      "weekly": 0.1,
+      "mtd": -1.21,
+      "ytd": -6.81,
+      "current_price": 51.29,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.5963,
+      "ma200": null,
+      "vs_spy_daily": -0.2,
+      "vs_spy_ytd": -15.88,
+      "ticker": "XLF",
+      "ytd_rank": 11
+    },
+    "Consumer Discretionary": {
+      "daily": -0.04,
+      "weekly": -1.27,
+      "mtd": 0.03,
+      "ytd": -1.61,
+      "current_price": 118.67,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 114.3671,
+      "ma200": null,
+      "vs_spy_daily": -0.83,
+      "vs_spy_ytd": -10.68,
+      "ticker": "XLY",
+      "ytd_rank": 9
+    },
+    "Consumer Staples": {
+      "daily": 0.31,
+      "weekly": 0.95,
+      "mtd": 0.96,
+      "ytd": 9.17,
+      "current_price": 84.98,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 82.9635,
+      "ma200": null,
+      "vs_spy_daily": -0.48,
+      "vs_spy_ytd": 0.1,
+      "ticker": "XLP",
+      "ytd_rank": 5
+    },
+    "Energy": {
+      "daily": 0.76,
+      "weekly": 4.25,
+      "mtd": -1.33,
+      "ytd": 30.99,
+      "current_price": 58.07,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 57.9319,
+      "ma200": null,
+      "vs_spy_daily": -0.03,
+      "vs_spy_ytd": 21.92,
+      "ticker": "XLE",
+      "ytd_rank": 1
+    },
+    "Industrials": {
+      "daily": 0.51,
+      "weekly": 0.76,
+      "mtd": 0.9,
+      "ytd": 11.56,
+      "current_price": 174.51,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 169.047,
+      "ma200": null,
+      "vs_spy_daily": -0.28,
+      "vs_spy_ytd": 2.49,
+      "ticker": "XLI",
+      "ytd_rank": 4
+    },
+    "Materials": {
+      "daily": -0.75,
+      "weekly": 0.16,
+      "mtd": 0.62,
+      "ytd": 13.47,
+      "current_price": 51.67,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 50.5846,
+      "ma200": null,
+      "vs_spy_daily": -1.54,
+      "vs_spy_ytd": 4.4,
+      "ticker": "XLB",
+      "ytd_rank": 3
+    },
+    "Utilities": {
+      "daily": 0.51,
+      "weekly": 0.4,
+      "mtd": -3.54,
+      "ytd": 5.49,
+      "current_price": 44.9,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 45.9536,
+      "ma200": null,
+      "vs_spy_daily": -0.28,
+      "vs_spy_ytd": -3.58,
+      "ticker": "XLU",
+      "ytd_rank": 7
+    },
+    "Real Estate": {
+      "daily": -0.68,
+      "weekly": -1.13,
+      "mtd": -0.93,
+      "ytd": 8.8,
+      "current_price": 43.91,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 42.7713,
+      "ma200": null,
+      "vs_spy_daily": -1.47,
+      "vs_spy_ytd": -0.27,
+      "ticker": "XLRE",
+      "ytd_rank": 6
+    },
+    "Communication Services": {
+      "daily": 0.3,
+      "weekly": 0.15,
+      "mtd": 0.33,
+      "ytd": -0.34,
+      "current_price": 117.11,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 114.8711,
+      "ma200": null,
+      "vs_spy_daily": -0.49,
+      "vs_spy_ytd": -9.41,
+      "ticker": "XLC",
+      "ytd_rank": 8
+    },
+    "SPY": {
+      "daily": 0.79,
+      "weekly": 1.43,
+      "mtd": 3.82,
+      "ytd": 9.07,
+      "current_price": 748.17,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 688.4809,
+      "ma200": null,
+      "ticker": "SPY"
+    }
+  },
+  "sector_rotation": {
+    "rotation_signal": "Risk-ON / Cyclical",
+    "cyclical_avg_ytd": 10.07,
+    "defensive_avg_ytd": 4.49,
+    "cyclical_vs_defensive_spread": 5.58,
+    "explanation": "Cyclicals are outperforming defensives, suggesting investors are comfortable with risk. Typically seen in early/mid expansion phases.",
+    "leaders": [
+      "Energy",
+      "Technology",
+      "Materials"
+    ],
+    "laggards": [
+      "Consumer Discretionary",
+      "Healthcare",
+      "Financials"
+    ],
+    "full_ranking": [
+      {
+        "sector": "Energy",
+        "ytd": 30.99
+      },
+      {
+        "sector": "Technology",
+        "ytd": 23.21
+      },
+      {
+        "sector": "Materials",
+        "ytd": 13.47
+      },
+      {
+        "sector": "Industrials",
+        "ytd": 11.56
+      },
+      {
+        "sector": "Consumer Staples",
+        "ytd": 9.17
+      },
+      {
+        "sector": "Real Estate",
+        "ytd": 8.8
+      },
+      {
+        "sector": "Utilities",
+        "ytd": 5.49
+      },
+      {
+        "sector": "Communication Services",
+        "ytd": -0.34
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "ytd": -1.61
+      },
+      {
+        "sector": "Healthcare",
+        "ytd": -5.5
+      },
+      {
+        "sector": "Financials",
+        "ytd": -6.81
+      }
+    ]
+  },
+  "breadth": {},
+  "fred_data": {
+    "CPI": {
+      "series_id": "CPIAUCSL",
+      "value": 332.407,
+      "date": "2026-04-01",
+      "prev_value": 330.293,
+      "change": 2.114,
+      "yoy_pct": 3.78
+    },
+    "Core_CPI": {
+      "series_id": "CPILFESL",
+      "value": 335.423,
+      "date": "2026-04-01",
+      "prev_value": 334.165,
+      "change": 1.258,
+      "yoy_pct": 2.74
+    },
+    "PCE": {
+      "series_id": "PCEPI",
+      "value": 130.344,
+      "date": "2026-03-01",
+      "prev_value": 129.484,
+      "change": 0.86,
+      "yoy_pct": 3.5
+    },
+    "Core_PCE": {
+      "series_id": "PCEPILFE",
+      "value": 129.279,
+      "date": "2026-03-01",
+      "prev_value": 128.901,
+      "change": 0.378,
+      "yoy_pct": 3.2
+    },
+    "PPI": {
+      "series_id": "PPIACO",
+      "value": 283.764,
+      "date": "2026-04-01",
+      "prev_value": 276.42,
+      "change": 7.344,
+      "yoy_pct": 9.82
+    },
+    "Real_GDP_Growth": {
+      "series_id": "A191RL1Q225SBEA",
+      "value": 2.0,
+      "date": "2026-01-01",
+      "prev_value": 0.5,
+      "change": 1.5,
+      "yoy_pct": -433.33
+    },
+    "Real_GDP": {
+      "series_id": "GDPC1",
+      "value": 24174.527,
+      "date": "2026-01-01",
+      "prev_value": 24055.749,
+      "change": 118.778,
+      "yoy_pct": 2.66
+    },
+    "Unemployment": {
+      "series_id": "UNRATE",
+      "value": 4.3,
+      "date": "2026-04-01",
+      "prev_value": 4.3,
+      "change": 0.0,
+      "yoy_pct": 2.38
+    },
+    "Jobless_Claims": {
+      "series_id": "ICSA",
+      "value": 211000.0,
+      "date": "2026-05-09",
+      "prev_value": 199000.0,
+      "change": 12000.0,
+      "yoy_pct": -6.64
+    },
+    "Continued_Claims": {
+      "series_id": "CCSA",
+      "value": 1782000.0,
+      "date": "2026-05-02",
+      "prev_value": 1758000.0,
+      "change": 24000.0,
+      "yoy_pct": -5.41
+    },
+    "JOLTS": {
+      "series_id": "JTSJOL",
+      "value": 6866.0,
+      "date": "2026-03-01",
+      "prev_value": 6922.0,
+      "change": -56.0,
+      "yoy_pct": -1.24
+    },
+    "Retail_Sales": {
+      "series_id": "RSXFS",
+      "value": 656115.0,
+      "date": "2026-04-01",
+      "prev_value": 653040.0,
+      "change": 3075.0,
+      "yoy_pct": 5.21
+    },
+    "M2": {
+      "series_id": "M2SL",
+      "value": 22686.0,
+      "date": "2026-03-01",
+      "prev_value": 22627.3,
+      "change": 58.7,
+      "yoy_pct": 4.57
+    },
+    "Housing_Starts": {
+      "series_id": "HOUST",
+      "value": 1502.0,
+      "date": "2026-03-01",
+      "prev_value": 1356.0,
+      "change": 146.0,
+      "yoy_pct": 10.85
+    },
+    "Building_Permits": {
+      "series_id": "PERMIT",
+      "value": 1363.0,
+      "date": "2026-03-01",
+      "prev_value": 1538.0,
+      "change": -175.0,
+      "yoy_pct": -7.97
+    },
+    "Consumer_Sentiment": {
+      "series_id": "UMCSENT",
+      "value": 53.3,
+      "date": "2026-03-01",
+      "prev_value": 56.6,
+      "change": -3.3,
+      "yoy_pct": -6.49
+    },
+    "Industrial_Production": {
+      "series_id": "INDPRO",
+      "value": 102.4963,
+      "date": "2026-04-01",
+      "prev_value": 101.806,
+      "change": 0.6903,
+      "yoy_pct": 1.35
+    },
+    "Capacity_Utilization": {
+      "series_id": "TCU",
+      "value": 76.1194,
+      "date": "2026-04-01",
+      "prev_value": 75.6716,
+      "change": 0.4478,
+      "yoy_pct": 0.02
+    },
+    "Fed_Funds_Rate": {
+      "series_id": "FEDFUNDS",
+      "value": 3.64,
+      "date": "2026-04-01",
+      "prev_value": 3.64,
+      "change": 0.0,
+      "yoy_pct": -15.94
+    },
+    "10Y_Yield": {
+      "series_id": "DGS10",
+      "value": 4.46,
+      "date": "2026-05-13",
+      "prev_value": 4.46,
+      "change": 0.0,
+      "yoy_pct": -0.67
+    },
+    "2Y_Yield": {
+      "series_id": "DGS2",
+      "value": 3.98,
+      "date": "2026-05-13",
+      "prev_value": 4.0,
+      "change": -0.02,
+      "yoy_pct": -1.0
+    },
+    "Yield_Curve_10Y2Y": {
+      "series_id": "T10Y2Y",
+      "value": 0.48,
+      "date": "2026-05-13",
+      "prev_value": 0.46,
+      "change": 0.02,
+      "yoy_pct": 2.13
+    },
+    "IG_Credit_Spread": {
+      "series_id": "BAMLC0A0CM",
+      "value": 0.76,
+      "date": "2026-05-13",
+      "prev_value": 0.77,
+      "change": -0.01,
+      "yoy_pct": -19.15
+    },
+    "HY_Credit_Spread": {
+      "series_id": "BAMLH0A0HYM2",
+      "value": 2.82,
+      "date": "2026-05-13",
+      "prev_value": 2.82,
+      "change": 0.0,
+      "yoy_pct": -8.74
+    },
+    "ISM_Manufacturing_PMI": {
+      "series_id": "MANEMP",
+      "value": 12596.0,
+      "date": "2026-04-01",
+      "prev_value": 12598.0,
+      "change": -2.0,
+      "yoy_pct": -0.52
+    },
+    "Existing_Home_Sales": {
+      "series_id": "EXHOSLUSM495S",
+      "value": 4020000.0,
+      "date": "2026-04-01",
+      "prev_value": 4010000.0,
+      "change": 10000.0,
+      "yoy_pct": 0.0
+    }
+  },
+  "eia_data": {
+    "crude_oil_stocks": {
+      "value": 836971.0,
+      "period": "2026-05-08",
+      "prev_value": 849882.0,
+      "change": -12911.0
+    },
+    "total_petroleum_stocks": {
+      "value": 1620349.0,
+      "period": "2026-05-08",
+      "prev_value": 1634013.0,
+      "change": -13664.0
+    },
+    "crude_production": {
+      "value": 13710.0,
+      "period": "2026-05-08",
+      "prev_value": 13573.0,
+      "change": 137.0
+    },
+    "gasoline_stocks": {
+      "value": 215711.0,
+      "period": "2026-05-08",
+      "prev_value": 219795.0,
+      "change": -4084.0
+    },
+    "distillate_stocks": {
+      "value": 102534.0,
+      "period": "2026-05-08",
+      "prev_value": 102344.0,
+      "change": 190.0
+    },
+    "natgas_storage": {
+      "value": 2290.0,
+      "period": "2026-05-08",
+      "units": "Bcf",
+      "change": 85.0
+    }
+  },
+  "news_headlines": [
+    {
+      "title": "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates - CNBC",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/13/stock-market-today-live-updates.html",
+      "description": "A rally in the technology sector drove the S&P 500 and Nasdaq Composite to new intraday and closing records on Wednesday.",
+      "published_at": "2026-05-14T12:27:00Z"
+    },
+    {
+      "title": "How Eight Tumultuous Years Pushed Jerome Powell and the Fed to the Limit - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/economy/central-banking/how-eight-tumultuous-years-pushed-jerome-powell-and-the-fed-to-the-limit-96388c46",
+      "description": null,
+      "published_at": "2026-05-14T12:22:01Z"
+    },
+    {
+      "title": "Stock Market Today: Stock Futures Tick Up With AI Trade Top of Mind Again \u2014 Live Updates - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-05-14-2026",
+      "description": null,
+      "published_at": "2026-05-14T11:51:00Z"
+    },
+    {
+      "title": "Versant reports first-quarter revenue decline, with bright spots in platforms and licensing - CNBC",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/14/versant-vsnt-earnings-q1-2026.html",
+      "description": "Versant, the portfolio of TV networks spun out from Comcast, reported earnings for its first quarter as an independent company.",
+      "published_at": "2026-05-14T11:00:53Z"
+    },
+    {
+      "title": "Meta\u2019s New Reality: Record High Profits. Record Low Morale - WIRED",
+      "source": "Wired",
+      "url": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
+      "description": "Next week, Meta is cutting about 10 percent of its staff. WIRED spoke with more than a dozen current and former employees about what it's like inside a company where \"everyone is unhappy.\"",
+      "published_at": "2026-05-14T09:00:00Z"
+    },
+    {
+      "title": "Boeing lost China. Trump\u2014and 500 jets\u2014may be about to win it back. - Fortune",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/05/14/trump-china-boeing-kelly-ortberg-plane-sales/",
+      "description": "Beijing hasn't ordered planes from Boeing since 2017. That could soon change.",
+      "published_at": "2026-05-14T07:00:00Z"
+    },
+    {
+      "title": "Exclusive-US clears H200 chip sales to 10 China firms as Nvidia CEO looks for breakthrough - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/exclusive-us-clears-h200-chip-054811034.html",
+      "description": "May 14 (Reuters) - The U.S. has cleared around 10 Chinese firms to buy Nvidia's second-most powerful AI chip, the H200, but not a single delivery has been...",
+      "published_at": "2026-05-14T05:51:00Z"
+    },
+    {
+      "title": "Repo Man Had 'Six Hours To Find 20 Pilots' While Seizing Jet Aircraft From Bankrupt Spirit Airlines - Jalopnik",
+      "source": "Jalopnik",
+      "url": "https://www.jalopnik.com/2172395/spirit-airlines-jet-aircraft-repossession/",
+      "description": "Repossessing a jet isn't quite as straightforward as a car, it turns out.",
+      "published_at": "2026-05-14T04:25:00Z"
+    },
+    {
+      "title": "Trump-Xi Summit Puts Nvidia, Boeing And 500-Jet Deal In Focus - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-xi-summit-puts-nvidia-040122496.html",
+      "description": "Investors are watching chips, aerospace, agriculture and rare earths as Trump and Xi head into high-stakes talks.",
+      "published_at": "2026-05-14T04:01:00Z"
+    },
+    {
+      "title": "Oil Steadies Ahead of Trump-Xi Talks as Iran War Tensions Simmer - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/news/oil-steadies-ahead-of-trump-xi-talks-as-iran-war-tensions-simmer-011040155.html",
+      "description": "(Bloomberg) -- Oil was steady as a meeting between US President Donald Trump and Chinese leader Xi Jinping kicked off, set against the backdrop of the Iran...",
+      "published_at": "2026-05-14T01:10:00Z"
+    },
+    {
+      "title": "Nvidia, Micron and AMD: AI Stocks Score New Price Target Hikes From Bank of America - TipRanks",
+      "source": "Tipranks.com",
+      "url": "https://www.tipranks.com/news/nvidia-micron-and-amd-ai-stocks-score-new-price-target-hikes-from-bank-of-america",
+      "description": "AI infrastructure spending has kept semiconductor stocks among Wall Street\u2019s best-performing groups throughout 2026, as hyperscalers continue pouring billions into data centers, advanced networking systems, and next-generation AI hardware. Those",
+      "published_at": "2026-05-14T00:41:12Z"
+    },
+    {
+      "title": "Silicon Valley tech giant posts record revenue, then cuts 4,000 jobs - San Francisco Chronicle",
+      "source": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php",
+      "description": "Cisco plans to cut about 4,000 jobs as the Silicon Valley tech giant redirects spending toward AI, security and optics.",
+      "published_at": "2026-05-14T00:09:47Z"
+    },
+    {
+      "title": "OpenAI trial wraps up with testimony about Reid Hoffman, a trophy, and a Musk outburst - Business Insider",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/musk-v-altman-final-testimony-jackass-trophy-reid-hoffman-2026-5",
+      "description": "A gag-gift trophy, an Elon Musk tantrum, and a Reid Hoffman name-drop figured prominently in the final day of testimony for Musk v Altman jurors.",
+      "published_at": "2026-05-13T22:54:00Z"
+    },
+    {
+      "title": "Allegiant completes merger with Sun Country - The Points Guy",
+      "source": "The Points Guy",
+      "url": "https://thepointsguy.com/news/allegiant-sun-country-airlines-merger-closes/",
+      "description": "Allegiant Air and Sun Country merge to create eighth largest airline in the U.S.",
+      "published_at": "2026-05-13T22:49:28Z"
+    },
+    {
+      "title": "Wall Street-crypto clash creates strange bedfellows in the Senate - Politico",
+      "source": "Politico",
+      "url": "https://www.politico.com/news/2026/05/13/wall-street-crypto-clash-senate-warren-00919742",
+      "description": "Banks are at odds with their longtime GOP allies \u2014 and themselves \u2014 over a landmark crypto bill.",
+      "published_at": "2026-05-13T22:18:17Z"
+    }
+  ],
+  "nyt_headlines": [
+    {
+      "title": "Starbucks Cuts 300 Corporate Jobs in Turnaround Push",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/starbucks-layoffs-office-closures.html",
+      "abstract": "The company said it would close four regional offices and take a $400 million charge related to the changes.",
+      "published_at": "2026-05-15T09:15:04-04:00"
+    },
+    {
+      "title": "\u2018No Essay\u2019 College Scholarships May Have Unseen Strings Attached",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/your-money/no-essay-college-scholarships.html",
+      "abstract": "Unlike traditional financial aid, the prizes are awarded by random drawings. The websites, in turn, gain access to applicants\u2019 personal information.",
+      "published_at": "2026-05-15T09:00:06-04:00"
+    },
+    {
+      "title": "What Trump Gained, and Didn\u2019t, From China",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/dealbook/trump-china-summit-report-card.html",
+      "abstract": "President Trump is returning home from Beijing after a two-day summit that achieved a few deals but left investors and analysts underwhelmed.",
+      "published_at": "2026-05-15T08:05:22-04:00"
+    },
+    {
+      "title": "Oil Prices Climb on Fears of Broader Energy Crunch",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/oil-stocks-gas-trump-iran.html",
+      "abstract": "Hopes for an end to the war in Iran faded after President Trump failed to secure a commitment from China to help persuade Iran to reopen the Strait of Hormuz.",
+      "published_at": "2026-05-15T07:40:50-04:00"
+    },
+    {
+      "title": "Elon Musk\u2019s Awkward Selfie Moment With a Chinese Billionaire in Beijing",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/musk-lei-jun-xiaomi.html",
+      "abstract": "A few seconds of selfie awkwardness between Elon Musk and Lei Jun, a prominent Chinese entrepreneur, has spread like wildfire on China\u2019s social media.",
+      "published_at": "2026-05-15T07:15:20-04:00"
+    },
+    {
+      "title": "Trump Touts \u2018Fantastic Trade Deals\u2019 With China, but Details Are Scarce",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/economy/trump-china-deals.html",
+      "abstract": "The president left Beijing following a summit with China, during which the two countries sought to stabilize their economic and political relations.",
+      "published_at": "2026-05-15T05:41:30-04:00"
+    },
+    {
+      "title": "A Guide to Medicare\u2019s New Coverage for Obesity Drugs",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/business/glp-1-weight-loss-drugs-cost-medicare.html",
+      "abstract": "What you should know about the federal government\u2019s pilot program offering GLP-1s solely for weight loss.",
+      "published_at": "2026-05-15T05:03:47-04:00"
+    },
+    {
+      "title": "As Powell Steps Down, the Fed Confronts \u2018Regime Change\u2019",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/05/15/us/politics/jerome-powell-kevin-warsh-federal-reserve.html",
+      "abstract": "Jerome H. Powell is passing the chair\u2019s baton to Kevin M. Warsh at the Federal Reserve, an institution that President Trump\u2019s pick says needs an overhaul.",
+      "published_at": "2026-05-15T05:02:33-04:00"
+    },
+    {
+      "title": "Joe Sedelmaier, Auteur Behind \u2018Where\u2019s the Beef?\u2019 Ad, Dies at 92",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/05/15/business/media/joe-sedelmaier-dead.html",
+      "abstract": "He directed nearly 1,000 comedic commercials, including a much-quoted spot for Wendy\u2019s and one for FedEx featuring a manic speed talker.",
+      "published_at": "2026-05-15T05:02:06-04:00"
+    },
+    {
+      "title": "It\u2019s Not Just U.S. Stocks. A.I. and Oil Are Moving Global Markets, Too.",
+      "source": "NYT Times Wire",
+      "url": "https://www.nytimes.com/2026/05/15/business/chip-ai-oil-emerging-stock-markets.html",
+      "abstract": "Intel, along with Taiwan and South Korea, are the latest winners, our columnist says. True diversification is hard to find.",
+      "published_at": "2026-05-15T05:01:46-04:00"
+    },
+    {
+      "title": "What the New Head of the Federal Reserve Will Inherit",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/interactive/2026/05/13/business/economy/kevin-warsh-fed-chair-interest-rates.html",
+      "abstract": "The incoming chair of the Fed will need to navigate a delicate economic moment, a president who wants to lower rates and an increasingly divisive leadership committee.",
+      "published_at": "2026-05-13T18:54:16Z"
+    },
+    {
+      "title": "A New Leader \u2014 and a New Showdown \u2014 at the Fed",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/05/14/podcasts/the-daily/warsh-powell-federal-reserve.html",
+      "abstract": "Kevin Warsh was sworn in as the new chair of the Federal Reserve.",
+      "published_at": "2026-05-14T10:00:10Z"
+    },
+    {
+      "title": "He Was Good at Steering the Fed, but He Was a Genius at Ignoring Trump\u2019s Threats",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/05/14/opinion/jerome-powell-fed-chair.html",
+      "abstract": "A model for all who follow.",
+      "published_at": "2026-05-14T09:04:29Z"
+    },
+    {
+      "title": "Senate Confirms Kevin Warsh as Fed Chair",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/05/13/us/politics/kevin-warsh-fed-chair-confirmed.html",
+      "abstract": "President Trump\u2019s pick to replace Jerome H. Powell takes the helm at a highly uncertain moment for the economy and with heightened concern about the Federal Reserve\u2019s ability to operate independently.",
+      "published_at": "2026-05-13T18:49:30Z"
+    },
+    {
+      "title": "Why a Warsh-Led Fed May Keep Interest Rates Steady",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/05/13/business/dealbook/warsh-interest-rates-trump.html",
+      "abstract": "Kevin Warsh, President Trump\u2019s pick to run the Federal Reserve, would face a growing inflation challenge if he\u2019s confirmed.",
+      "published_at": "2026-05-13T12:04:39Z"
+    }
+  ],
+  "economic_calendar": [
+    {
+      "date": "2026/05/15",
+      "time": "12:30",
+      "event": "NY Empire State Manufacturing Index  (May)",
+      "importance": "\u2605\u2605",
+      "forecast": "7.30",
+      "previous": "11.00",
+      "actual": "19.60",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "13:15",
+      "event": "Industrial Production (MoM)  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "0.3%",
+      "previous": "-0.3%",
+      "actual": "0.7%",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "13:15",
+      "event": "Industrial Production (YoY)  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "0.76%",
+      "actual": "1.35%",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "17:00",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "410",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "17:00",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "548",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "19:30",
+      "event": "CFTC Crude Oil speculative net positions",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "178.8K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "19:30",
+      "event": "CFTC Gold speculative net positions",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "163.3K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "19:30",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.2K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/15",
+      "time": "19:30",
+      "event": "CFTC S&P 500 speculative net positions",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "-103.9K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/18",
+      "time": "20:00",
+      "event": "TIC Net Long-Term Transactions  (Mar)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "58.6B",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/19",
+      "time": "12:00",
+      "event": "Fed Waller Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/19",
+      "time": "12:15",
+      "event": "ADP Employment Change Weekly",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "33.00K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/19",
+      "time": "14:00",
+      "event": "Pending Home Sales (MoM)  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.5%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/19",
+      "time": "20:30",
+      "event": "API Weekly Crude Oil Stock",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "-2.188M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/20",
+      "time": "13:15",
+      "event": "Fed Vice Chair for Supervision Barr Speaks",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/20",
+      "time": "14:30",
+      "event": "Crude Oil Inventories",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "-4.306M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/20",
+      "time": "14:30",
+      "event": "Cushing Crude Oil Inventories",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "-1.702M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/20",
+      "time": "18:00",
+      "event": "FOMC Meeting Minutes",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Building Permits  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.363M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Continuing Jobless Claims",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1,782K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Housing Starts  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.502M",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Housing Starts (MoM)  (Apr)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "10.8%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Initial Jobless Claims",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "211K",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Philadelphia Fed Manufacturing Index  (May)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "26.7",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "12:30",
+      "event": "Philly Fed Employment  (May)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "-5.1",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "13:45",
+      "event": "S&P Global Manufacturing PMI  (May)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "54.5",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "13:45",
+      "event": "S&P Global Composite PMI  (May)",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "51.7",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "13:45",
+      "event": "S&P Global Services PMI  (May)",
+      "importance": "\u2605\u2605\u2605",
+      "forecast": "",
+      "previous": "51.0",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "14:00",
+      "event": "Atlanta Fed GDPNow  (Q2)",
+      "importance": "\u2605\u2605",
+      "forecast": "4.0%",
+      "previous": "4.0%",
+      "actual": "",
+      "country": "US"
+    },
+    {
+      "date": "2026/05/21",
+      "time": "17:00",
+      "event": "10-Year TIPS Auction",
+      "importance": "\u2605\u2605",
+      "forecast": "",
+      "previous": "1.896%",
+      "actual": "",
+      "country": "US"
+    }
+  ]
+}
