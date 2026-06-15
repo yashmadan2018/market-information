@@ -1,0 +1,750 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T16:55:31.860167",
+  "market_data": {
+    "S&P 500": {
+      "ticker": "^GSPC",
+      "price": 7568.6201,
+      "change_pct": 1.85,
+      "as_of": "2026-06-15"
+    },
+    "NASDAQ": {
+      "ticker": "^IXIC",
+      "price": 26637.625,
+      "change_pct": 2.89,
+      "as_of": "2026-06-15"
+    },
+    "Dow Jones": {
+      "ticker": "^DJI",
+      "price": 51902.1094,
+      "change_pct": 1.37,
+      "as_of": "2026-06-15"
+    },
+    "VIX": {
+      "ticker": "^VIX",
+      "price": 16.05,
+      "change_pct": -9.22,
+      "as_of": "2026-06-15"
+    },
+    "DXY": {
+      "ticker": "DX-Y.NYB",
+      "price": 99.591,
+      "change_pct": -0.16,
+      "as_of": "2026-06-15"
+    },
+    "10Y Treasury": {
+      "ticker": "^TNX",
+      "price": 4.461,
+      "change_pct": -0.58,
+      "as_of": "2026-06-15"
+    },
+    "2Y Treasury": {
+      "ticker": "^IRX",
+      "price": 3.62,
+      "change_pct": 0.06,
+      "as_of": "2026-06-15"
+    },
+    "WTI Oil": {
+      "ticker": "CL=F",
+      "price": 80.43,
+      "change_pct": -5.24,
+      "as_of": "2026-06-15"
+    },
+    "Brent Oil": {
+      "ticker": "BZ=F",
+      "price": 83.11,
+      "change_pct": -4.83,
+      "as_of": "2026-06-15"
+    },
+    "Copper": {
+      "ticker": "HG=F",
+      "price": 6.5,
+      "change_pct": 1.08,
+      "as_of": "2026-06-15"
+    },
+    "Gold": {
+      "ticker": "GC=F",
+      "price": 4358.3999,
+      "change_pct": 3.4,
+      "as_of": "2026-06-15"
+    }
+  },
+  "sector_performance": {
+    "Technology": {
+      "daily": 3.66,
+      "weekly": 4.01,
+      "mtd": -2.14,
+      "ytd": 31.49,
+      "current_price": 191.57,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 169.1544,
+      "ma200": null,
+      "vs_spy_daily": 1.78,
+      "vs_spy_ytd": 21.32,
+      "ticker": "XLK",
+      "ytd_rank": 1
+    },
+    "Healthcare": {
+      "daily": -0.32,
+      "weekly": 0.44,
+      "mtd": 3.7,
+      "ytd": -1.2,
+      "current_price": 153.315,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 147.7113,
+      "ma200": null,
+      "vs_spy_daily": -2.2,
+      "vs_spy_ytd": -11.37,
+      "ticker": "XLV",
+      "ytd_rank": 8
+    },
+    "Financials": {
+      "daily": 0.94,
+      "weekly": 3.6,
+      "mtd": 4.69,
+      "ytd": -2.18,
+      "current_price": 53.84,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 51.7212,
+      "ma200": null,
+      "vs_spy_daily": -0.94,
+      "vs_spy_ytd": -12.35,
+      "ticker": "XLF",
+      "ytd_rank": 10
+    },
+    "Consumer Discretionary": {
+      "daily": 1.8,
+      "weekly": 2.87,
+      "mtd": 0.43,
+      "ytd": -1.58,
+      "current_price": 118.7,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 117.2422,
+      "ma200": null,
+      "vs_spy_daily": -0.08,
+      "vs_spy_ytd": -11.75,
+      "ticker": "XLY",
+      "ytd_rank": 9
+    },
+    "Consumer Staples": {
+      "daily": -0.2,
+      "weekly": 3.11,
+      "mtd": 4.41,
+      "ytd": 10.03,
+      "current_price": 85.65,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 83.5186,
+      "ma200": null,
+      "vs_spy_daily": -2.08,
+      "vs_spy_ytd": -0.14,
+      "ticker": "XLP",
+      "ytd_rank": 6
+    },
+    "Energy": {
+      "daily": -2.95,
+      "weekly": -4.24,
+      "mtd": -2.52,
+      "ytd": 26.0,
+      "current_price": 55.855,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 57.7309,
+      "ma200": null,
+      "vs_spy_daily": -4.83,
+      "vs_spy_ytd": 15.83,
+      "ticker": "XLE",
+      "ytd_rank": 2
+    },
+    "Industrials": {
+      "daily": 1.84,
+      "weekly": 3.33,
+      "mtd": 4.07,
+      "ytd": 14.7,
+      "current_price": 179.42,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 172.6614,
+      "ma200": null,
+      "vs_spy_daily": -0.04,
+      "vs_spy_ytd": 4.53,
+      "ticker": "XLI",
+      "ytd_rank": 4
+    },
+    "Materials": {
+      "daily": 1.2,
+      "weekly": 5.7,
+      "mtd": 3.7,
+      "ytd": 15.96,
+      "current_price": 52.8053,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 51.2849,
+      "ma200": null,
+      "vs_spy_daily": -0.68,
+      "vs_spy_ytd": 5.79,
+      "ticker": "XLB",
+      "ytd_rank": 3
+    },
+    "Utilities": {
+      "daily": 0.84,
+      "weekly": 3.18,
+      "mtd": 4.19,
+      "ytd": 5.5,
+      "current_price": 44.905,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 45.2557,
+      "ma200": null,
+      "vs_spy_daily": -1.04,
+      "vs_spy_ytd": -4.67,
+      "ticker": "XLU",
+      "ytd_rank": 7
+    },
+    "Real Estate": {
+      "daily": -0.23,
+      "weekly": 2.78,
+      "mtd": 4.59,
+      "ytd": 12.13,
+      "current_price": 45.255,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 43.9833,
+      "ma200": null,
+      "vs_spy_daily": -2.11,
+      "vs_spy_ytd": 1.96,
+      "ticker": "XLRE",
+      "ytd_rank": 5
+    },
+    "Communication Services": {
+      "daily": 0.42,
+      "weekly": 0.93,
+      "mtd": -3.02,
+      "ytd": -4.59,
+      "current_price": 112.12,
+      "above_50ma": false,
+      "above_200ma": null,
+      "ma50": 115.2808,
+      "ma200": null,
+      "vs_spy_daily": -1.46,
+      "vs_spy_ytd": -14.76,
+      "ticker": "XLC",
+      "ytd_rank": 11
+    },
+    "SPY": {
+      "daily": 1.88,
+      "weekly": 2.23,
+      "mtd": -0.37,
+      "ytd": 10.17,
+      "current_price": 755.71,
+      "above_50ma": true,
+      "above_200ma": null,
+      "ma50": 724.799,
+      "ma200": null,
+      "ticker": "SPY"
+    }
+  },
+  "sector_rotation": {
+    "rotation_signal": "Risk-ON / Cyclical",
+    "cyclical_avg_ytd": 11.4,
+    "defensive_avg_ytd": 6.62,
+    "cyclical_vs_defensive_spread": 4.78,
+    "explanation": "Cyclicals are outperforming defensives, suggesting investors are comfortable with risk. Typically seen in early/mid expansion phases.",
+    "leaders": [
+      "Technology",
+      "Energy",
+      "Materials"
+    ],
+    "laggards": [
+      "Consumer Discretionary",
+      "Financials",
+      "Communication Services"
+    ],
+    "full_ranking": [
+      {
+        "sector": "Technology",
+        "ytd": 31.49
+      },
+      {
+        "sector": "Energy",
+        "ytd": 26.0
+      },
+      {
+        "sector": "Materials",
+        "ytd": 15.96
+      },
+      {
+        "sector": "Industrials",
+        "ytd": 14.7
+      },
+      {
+        "sector": "Real Estate",
+        "ytd": 12.13
+      },
+      {
+        "sector": "Consumer Staples",
+        "ytd": 10.03
+      },
+      {
+        "sector": "Utilities",
+        "ytd": 5.5
+      },
+      {
+        "sector": "Healthcare",
+        "ytd": -1.2
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "ytd": -1.58
+      },
+      {
+        "sector": "Financials",
+        "ytd": -2.18
+      },
+      {
+        "sector": "Communication Services",
+        "ytd": -4.59
+      }
+    ]
+  },
+  "breadth": {},
+  "fred_data": {
+    "CPI": {
+      "series_id": "CPIAUCSL",
+      "value": 333.979,
+      "date": "2026-05-01",
+      "prev_value": 332.407,
+      "change": 1.572,
+      "yoy_pct": 4.17
+    },
+    "Core_CPI": {
+      "series_id": "CPILFESL",
+      "value": 336.121,
+      "date": "2026-05-01",
+      "prev_value": 335.423,
+      "change": 0.698,
+      "yoy_pct": 2.82
+    },
+    "PCE": {
+      "series_id": "PCEPI",
+      "value": 130.902,
+      "date": "2026-04-01",
+      "prev_value": 130.381,
+      "change": 0.521,
+      "yoy_pct": 3.77
+    },
+    "Core_PCE": {
+      "series_id": "PCEPILFE",
+      "value": 129.63,
+      "date": "2026-04-01",
+      "prev_value": 129.321,
+      "change": 0.309,
+      "yoy_pct": 3.29
+    },
+    "PPI": {
+      "series_id": "PPIACO",
+      "value": 292.504,
+      "date": "2026-05-01",
+      "prev_value": 282.7,
+      "change": 9.804,
+      "yoy_pct": 13.08
+    },
+    "Real_GDP_Growth": {
+      "series_id": "A191RL1Q225SBEA",
+      "value": 1.6,
+      "date": "2026-01-01",
+      "prev_value": 0.5,
+      "change": 1.1,
+      "yoy_pct": -366.67
+    },
+    "Real_GDP": {
+      "series_id": "GDPC1",
+      "value": 24152.656,
+      "date": "2026-01-01",
+      "prev_value": 24055.749,
+      "change": 96.907,
+      "yoy_pct": 2.57
+    },
+    "Unemployment": {
+      "series_id": "UNRATE",
+      "value": 4.3,
+      "date": "2026-05-01",
+      "prev_value": 4.3,
+      "change": 0.0,
+      "yoy_pct": 0.0
+    },
+    "Jobless_Claims": {
+      "series_id": "ICSA",
+      "value": 229000.0,
+      "date": "2026-06-06",
+      "prev_value": 225000.0,
+      "change": 4000.0,
+      "yoy_pct": -6.91
+    },
+    "Continued_Claims": {
+      "series_id": "CCSA",
+      "value": 1795000.0,
+      "date": "2026-05-30",
+      "prev_value": 1771000.0,
+      "change": 24000.0,
+      "yoy_pct": -7.81
+    },
+    "JOLTS": {
+      "series_id": "JTSJOL",
+      "value": 7618.0,
+      "date": "2026-04-01",
+      "prev_value": 6887.0,
+      "change": 731.0,
+      "yoy_pct": 7.33
+    },
+    "Retail_Sales": {
+      "series_id": "RSXFS",
+      "value": 656115.0,
+      "date": "2026-04-01",
+      "prev_value": 653040.0,
+      "change": 3075.0,
+      "yoy_pct": 5.21
+    },
+    "M2": {
+      "series_id": "M2SL",
+      "value": 22804.5,
+      "date": "2026-04-01",
+      "prev_value": 22686.4,
+      "change": 118.1,
+      "yoy_pct": 4.72
+    },
+    "Housing_Starts": {
+      "series_id": "HOUST",
+      "value": 1465.0,
+      "date": "2026-04-01",
+      "prev_value": 1507.0,
+      "change": -42.0,
+      "yoy_pct": 4.64
+    },
+    "Building_Permits": {
+      "series_id": "PERMIT",
+      "value": 1423.0,
+      "date": "2026-04-01",
+      "prev_value": 1363.0,
+      "change": 60.0,
+      "yoy_pct": -1.52
+    },
+    "Consumer_Sentiment": {
+      "series_id": "UMCSENT",
+      "value": 49.8,
+      "date": "2026-04-01",
+      "prev_value": 53.3,
+      "change": -3.5,
+      "yoy_pct": -4.6
+    },
+    "Industrial_Production": {
+      "series_id": "INDPRO",
+      "value": 102.6475,
+      "date": "2026-05-01",
+      "prev_value": 102.509,
+      "change": 0.1385,
+      "yoy_pct": 1.67
+    },
+    "Capacity_Utilization": {
+      "series_id": "TCU",
+      "value": 76.1663,
+      "date": "2026-05-01",
+      "prev_value": 76.1289,
+      "change": 0.0374,
+      "yoy_pct": 0.36
+    },
+    "Fed_Funds_Rate": {
+      "series_id": "FEDFUNDS",
+      "value": 3.63,
+      "date": "2026-05-01",
+      "prev_value": 3.64,
+      "change": -0.01,
+      "yoy_pct": -16.17
+    },
+    "10Y_Yield": {
+      "series_id": "DGS10",
+      "value": 4.45,
+      "date": "2026-06-11",
+      "prev_value": 4.55,
+      "change": -0.1,
+      "yoy_pct": 0.91
+    },
+    "2Y_Yield": {
+      "series_id": "DGS2",
+      "value": 4.05,
+      "date": "2026-06-11",
+      "prev_value": 4.13,
+      "change": -0.08,
+      "yoy_pct": 2.79
+    },
+    "Yield_Curve_10Y2Y": {
+      "series_id": "T10Y2Y",
+      "value": 0.39,
+      "date": "2026-06-12",
+      "prev_value": 0.4,
+      "change": -0.01,
+      "yoy_pct": -15.22
+    },
+    "IG_Credit_Spread": {
+      "series_id": "BAMLC0A0CM",
+      "value": 0.74,
+      "date": "2026-06-12",
+      "prev_value": 0.75,
+      "change": -0.01,
+      "yoy_pct": -15.91
+    },
+    "HY_Credit_Spread": {
+      "series_id": "BAMLH0A0HYM2",
+      "value": 2.71,
+      "date": "2026-06-12",
+      "prev_value": 2.78,
+      "change": -0.07,
+      "yoy_pct": -14.51
+    },
+    "ISM_Manufacturing_PMI": {
+      "series_id": "MANEMP",
+      "value": 12605.0,
+      "date": "2026-05-01",
+      "prev_value": 12598.0,
+      "change": 7.0,
+      "yoy_pct": -0.36
+    },
+    "Existing_Home_Sales": {
+      "series_id": "EXHOSLUSM495S",
+      "value": 4170000.0,
+      "date": "2026-05-01",
+      "prev_value": 4040000.0,
+      "change": 130000.0,
+      "yoy_pct": 3.22
+    }
+  },
+  "eia_data": {
+    "crude_oil_stocks": {
+      "value": 775677.0,
+      "period": "2026-06-05",
+      "prev_value": 790831.0,
+      "change": -15154.0
+    },
+    "total_petroleum_stocks": {
+      "value": 1559930.0,
+      "period": "2026-06-05",
+      "prev_value": 1573470.0,
+      "change": -13540.0
+    },
+    "crude_production": {
+      "value": 13799.0,
+      "period": "2026-06-05",
+      "prev_value": 13707.0,
+      "change": 92.0
+    },
+    "gasoline_stocks": {
+      "value": 215141.0,
+      "period": "2026-06-05",
+      "prev_value": 214955.0,
+      "change": 186.0
+    },
+    "distillate_stocks": {
+      "value": 102101.0,
+      "period": "2026-06-05",
+      "prev_value": 102301.0,
+      "change": -200.0
+    },
+    "natgas_storage": {
+      "value": 2686.0,
+      "period": "2026-06-05",
+      "units": "Bcf",
+      "change": 108.0
+    }
+  },
+  "news_headlines": [
+    {
+      "title": "Amazon Prime Day 2026: Early deals are already live from Apple, Keurig, Hanes, Shark and more, plus everything we know about summer's biggest sale - Yahoo",
+      "source": "Yahoo Entertainment",
+      "url": "https://shopping.yahoo.com/deals/breaking-news/article/amazon-prime-day-2026-early-deals-are-already-live-from-apple-keurig-hanes-shark-and-more-plus-everything-we-know-about-summers-biggest-sale-095951903.html",
+      "description": "Mark your calendars: The epic blowout is set for June 23-26. Yes, that's four whole days of retail therapy!",
+      "published_at": "2026-06-14T14:03:58Z"
+    },
+    {
+      "title": "\u2018A fool and his money are soon parted\u2019: Barron Trump-backed beverage company is charging $39 for a 12-pack - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fool-money-soon-parted-barron-130000567.html",
+      "description": "The release of yerba mate drink SOLLOS was tinged with controversy over the cost of the beverage, and its link to President Donald Trump\u2019s youngest son.",
+      "published_at": "2026-06-14T13:00:00Z"
+    },
+    {
+      "title": "How Amazon and the White House ended Anthropic's Fable - Axios",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/06/13/anthropic-amazon-white-house",
+      "description": "The episode highlights the reactionary approach to a technology that is moving at breakneck speed.",
+      "published_at": "2026-06-14T12:24:17Z"
+    },
+    {
+      "title": "Alfredo sauce recalled over potential salmonella contamination - kare11.com",
+      "source": "KARE11.com",
+      "url": "https://www.kare11.com/article/news/nation-world/alfredo-sauce-recall-salmonella-risk/507-9dd34f8f-c758-4897-8063-765f41134471",
+      "description": null,
+      "published_at": "2026-06-14T12:18:00Z"
+    },
+    {
+      "title": "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway - CNBC",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/14/jetblue-fort-lauderdale-airport.html",
+      "description": "JetBlue faces heavy competition from Miami International Airport, an American Airlines stronghold.",
+      "published_at": "2026-06-14T12:00:02Z"
+    },
+    {
+      "title": "He profits off raw milk that\u2019s making people sick. The government isn\u2019t stopping him. - CNN",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/06/14/health/the-milkman",
+      "description": "Unpasteurized milk has moved from a fringe obsession to a widespread movement rooted in institutional distrust. Despite stringent hygiene efforts, contamination from deadly bacteria like E. coli and salmonella remains an inherent risk.",
+      "published_at": "2026-06-14T10:30:09Z"
+    },
+    {
+      "title": "He Was Falsely Deemed a Predator, as 24K Watched - Newser",
+      "source": "Newser",
+      "url": "https://www.newser.com/story/390889/vigilante-who-chased-predators-aired-bust-of-wrong-man.html",
+      "description": "NYT profiles Vitaly Zdorovetskiy, online provocateur who set up an innocent man's livestream 'bust'",
+      "published_at": "2026-06-14T10:30:00Z"
+    },
+    {
+      "title": "The Strait of Hormuz Has Been Closed for 100 Days. Why Aren\u2019t Oil Prices Higher? - WIRED",
+      "source": "Wired",
+      "url": "https://www.wired.com/story/strait-of-hormuz-closed-100-days-why-arent-oil-prices-higher/",
+      "description": "President Donald Trump says a secret mission moved 100 million barrels of oil through the blocked Strait of Hormuz. That number is impossible to verify.",
+      "published_at": "2026-06-14T10:00:00Z"
+    },
+    {
+      "title": "A Guide to the Biggest Winners From the SpaceX IPO - WSJ",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/finance/investing/spacex-ipo-winners-spcx-stock-3c5b373f",
+      "description": null,
+      "published_at": "2026-06-14T09:30:00Z"
+    },
+    {
+      "title": "Want obesity drugs covered by insurance? Telehealth companies have a big say - NPR",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/06/14/nx-s1-5805984/glp1-telehealth-weight-loss-drugs",
+      "description": "Telehealth companies offer lifestyle support so people taking obesity drugs can have the most success losing weight. But employers also want the telehealth providers to limit spending on the drugs.",
+      "published_at": "2026-06-14T09:00:00Z"
+    },
+    {
+      "title": "He was an early SpaceX employee. Here's how his equity helped him. - Business Insider",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/spacex-equity-pay-off-loans-buy-home-josh-giegel-2026-6#article",
+      "description": "Josh Giegel joined SpaceX in 2009 and worked there for 3 years. He says his equity in the rocket company has been \"liberating.\"",
+      "published_at": "2026-06-14T08:59:09Z"
+    },
+    {
+      "title": "Trump Posts Cringe Throwback Pics in Self-Promo Shocker - Yahoo",
+      "source": "Daily Beast",
+      "url": "https://www.thedailybeast.com/donald-trump-posts-cringe-throwback-pics-in-self-promo-shocker/",
+      "description": "Donald Trump spent valuable time Saturday posting self-promoting Truth Social messages about what a capable, fearless, adventurous fellow he is. Despite the ...",
+      "published_at": "2026-06-14T04:50:00Z"
+    },
+    {
+      "title": "I pay $20 a month for ChatGPT \u2014 Claude Fable 5 made me question why - Tom's Guide",
+      "source": "Tom's Guide",
+      "url": "https://www.tomsguide.com/ai/i-pay-usd20-a-month-for-chatgpt-claude-fable-5-made-me-question-why",
+      "description": "Claude Fable 5 is Anthropic\u2019s most powerful, elite-intelligence model to date, but don't call it a chatbot",
+      "published_at": "2026-06-14T04:15:00Z"
+    },
+    {
+      "title": "The world wants more high-protein products, but there\u2019s not enough whey to go around - AP News",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/protein-powder-shortage-prices-whey-concentrate-c5638b9d65b0fa5967488852993d76db",
+      "description": "Global consumers want more protein in every bite, but the dairy industry is struggling to give it to them. In the last few years, food companies have added whey protein concentrate into everything from Pop-Tarts to potato chips to meet growing customer demand\u2026",
+      "published_at": "2026-06-14T04:01:00Z"
+    },
+    {
+      "title": "SpaceX debut helps lift market sentiment after volatile week - Yahoo Finance",
+      "source": "Yahoo Entertainment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-debut-helps-lift-market-025542739.html",
+      "description": "Investing.com -- SpaceX\u2019s blockbuster stock market debut helped boost investor sentiment on Friday, easing concerns that recent volatility had weakened...",
+      "published_at": "2026-06-14T02:55:00Z"
+    }
+  ],
+  "nyt_headlines": [
+    {
+      "title": "Deal to Reopen Hormuz Kicks Off Long Effort to Ease Energy Crisis",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/energy-environment/iran-deal-oil-natural-gas.html",
+      "abstract": "The pace of the recovery will depend on how confident companies are that the deal between the United States and Iran will hold and be extended.",
+      "published_at": "2026-06-15T09:03:50-04:00"
+    },
+    {
+      "title": "SpaceX\u2019s Stock Rises on First Full Day of Trading",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/spacex-stock.html",
+      "abstract": "After notching big gains on its debut on Friday, the company\u2019s shares jumped again on Monday.",
+      "published_at": "2026-06-15T08:46:31-04:00"
+    },
+    {
+      "title": "Fox to Acquire Roku, Joining the Battle for the Living Room",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/fox-roku-acquisition-streaming-media.html",
+      "abstract": "The $22 billion deal is one of the biggest moves yet by Lachlan Murdoch, who took over for his father as chairman of Fox in 2023.",
+      "published_at": "2026-06-15T08:44:42-04:00"
+    },
+    {
+      "title": "Global Markets Rally on Iran Peace Hopes",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/dealbook/trump-iran-peace-rally.html",
+      "abstract": "A framework agreement could be signed later this week, but details are scarce. Still, investors are cheering the potential breakthrough.",
+      "published_at": "2026-06-15T08:14:24-04:00"
+    },
+    {
+      "title": "Shipping Firms, Awaiting Details, Are Cautious of U.S.-Iran Deal",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/us-iran-deal-shipping-companies-strait-of-hormuz.html",
+      "abstract": "Shipowners welcomed the agreement to reopen the Strait of Hormuz, but said they would need more security guarantees before resuming transits.",
+      "published_at": "2026-06-15T07:49:25-04:00"
+    },
+    {
+      "title": "What to Know About Planned Social Media Bans Around the World",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/world/europe/social-media-bans-worldwide.html",
+      "abstract": "Britain said it would ban social media access for children under 16 starting in 2027, joining several other countries introducing similar measures.",
+      "published_at": "2026-06-15T07:19:17-04:00"
+    },
+    {
+      "title": "How China Can Move the Price of Oil Even by Not Buying",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/business/china-oil-iran.html",
+      "abstract": "China is the world\u2019s largest purchaser of oil. But three months after the war with Iran began, it cut its imports, cushioning the global market.",
+      "published_at": "2026-06-15T06:39:16-04:00"
+    },
+    {
+      "title": "To Toast America\u2019s Birthday, They Blended Bourbon From Every State",
+      "source": "NYT Top Stories",
+      "url": "https://www.nytimes.com/2026/06/15/dining/drinks/united-states-of-bourbon-blend-lost-lantern.html",
+      "abstract": "United States of Bourbon, the result of a Vermont couple\u2019s many road trips, is just one of several special whiskeys marking the 250th.",
+      "published_at": "2026-06-15T05:00:51-04:00"
+    },
+    {
+      "title": "Wages Are Falling. Wealth Is Surging. No Wonder Americans Are Unhappy.",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/06/13/business/economy-trillionaire-wealth-wages.html",
+      "abstract": "As Elon Musk became the world\u2019s first trillionaire, workers are facing higher prices and fears of A.I.-driven job losses.",
+      "published_at": "2026-06-13T09:02:44Z"
+    },
+    {
+      "title": "Your Summer Politics Quiz Is Here",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/interactive/2026/06/15/opinion/contributors/15collins-quiz-interactive.html",
+      "abstract": "Ease into the summer with the latest Gail Collins politics quiz.",
+      "published_at": "2026-06-15T09:04:01Z"
+    },
+    {
+      "title": "Todd Blanche Is Unfit for Office",
+      "source": "NYT Article Search",
+      "url": "https://www.nytimes.com/2026/06/15/opinion/blanche-confirmation-trump-attorney-general.html",
+      "abstract": "Nominating Mr. Blanche to be the nation\u2019s top law enforcement officer crosses a red line, and the Senate needs to defeat him.",
+      "published_at": "2026-06-15T05:00:05Z"
+    }
+  ],
+  "economic_calendar": []
+}
